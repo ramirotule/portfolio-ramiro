@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Aquí debes reemplazar "tudominio.com" por el dominio final que uses cuando lo publiques
+Sitemap: https://tudominio.com/sitemap.xml

@@ -1,15 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Terminal,
-  Download,
-  Globe,
-  MapPin,
-  Database,
-  Server,
-  Cpu,
-  Box,
-} from "lucide-react";
+import { Download, Database } from "lucide-react";
 import profilePic from "../assets/profile.png";
 import { PERSONAL_DATA } from "../constants";
 
@@ -98,12 +89,14 @@ const EXPERIENCE_DATA = {
         { label: "PROTOTIPOS", value: "10+" },
         { label: "CURIOSIDAD", value: "100%" },
       ],
-    }
+    },
   ],
 };
 
 const InteractiveCV = () => {
-  const [activeTab, setActiveTab] = useState<"us" | "local" | "interests">("us");
+  const [activeTab, setActiveTab] = useState<"us" | "local" | "interests">(
+    "us",
+  );
 
   return (
     <section
