@@ -13,7 +13,6 @@ import {
   Command,
   MapPin,
   Mail,
-  Coffee,
   Activity,
   Bot,
   Cpu,
@@ -22,14 +21,32 @@ import {
 } from "lucide-react";
 
 const GithubIcon = ({ size }: { size: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.24c3-.3 6-1.5 6-6.76a5.5 5.5 0 0 0-1.5-3.8 5.4 5.4 0 0 0-.15-3.8s-1.2-.4-3.9 1.4a13.3 13.3 0 0 0-7 0C6 2.5 4.8 2.9 4.8 2.9A5.4 5.4 0 0 0 4.6 6.7 5.5 5.5 0 0 0 3 10.5c0 5.2 3 6.4 6 6.74-.8.7-1 2-1 2.8v4"></path>
     <path d="M9 20a3 3 0 0 1-5-1.5"></path>
   </svg>
 );
 
 const LinkedinIcon = ({ size }: { size: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
     <rect x="2" y="9" width="4" height="12"></rect>
     <circle cx="4" cy="4" r="2"></circle>
@@ -117,7 +134,9 @@ function App() {
                       onClick={() => {
                         setIsCommandOpen(false);
                         if (item.path.startsWith("#")) {
-                          document.querySelector(item.path)?.scrollIntoView({ behavior: 'smooth' });
+                          document
+                            .querySelector(item.path)
+                            ?.scrollIntoView({ behavior: "smooth" });
                         } else {
                           navigate(item.path);
                         }
@@ -153,77 +172,98 @@ function App() {
 
       {/* Main Content Sections */}
       {/* Main Content Sections */}
-      <div className="pt-0"> {/* Kept relative/pt handled by sections */}
+      <div className="pt-0">
+        {" "}
+        {/* Kept relative/pt handled by sections */}
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <Mission />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Mission />
+              </>
+            }
+          />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<BentoGrid />} />
           <Route path="/experience" element={<InteractiveCV />} />
-          <Route path="/interests" element={
-            <>
+          <Route
+            path="/interests"
+            element={
+              <>
+                {/* Interests & Learning Section */}
+                <section
+                  id="interests"
+                  className="py-24 px-6 max-w-7xl mx-auto"
+                >
+                  <div className="glass p-12 relative overflow-hidden border-tertiary/20">
+                    <div className="absolute top-0 right-0 p-4">
+                      <Activity
+                        size={24}
+                        className="text-tertiary animate-pulse"
+                      />
+                    </div>
 
-      {/* Interests & Learning Section */}
-      <section id="interests" className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="glass p-12 relative overflow-hidden border-tertiary/20">
-          <div className="absolute top-0 right-0 p-4">
-            <Activity size={24} className="text-tertiary animate-pulse" />
-          </div>
+                    <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
+                      <div className="w-16 h-16 border border-tertiary flex items-center justify-center text-tertiary group-hover:bg-tertiary/10 transition-colors shrink-0">
+                        <Bot size={32} />
+                      </div>
+                      <div>
+                        <h2 className="text-4xl md:text-6xl font-display font-black uppercase text-white tracking-tighter">
+                          Continuous{" "}
+                          <span className="text-tertiary italic">Learning</span>
+                        </h2>
+                        <p className="text-[#adaaab] text-sm uppercase tracking-widest mt-2">
+                          Expanding my stack and exploring new frontiers.
+                        </p>
+                      </div>
+                    </div>
 
-          <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
-            <div className="w-16 h-16 border border-tertiary flex items-center justify-center text-tertiary group-hover:bg-tertiary/10 transition-colors shrink-0">
-              <Bot size={32} />
-            </div>
-            <div>
-              <h2 className="text-4xl md:text-6xl font-display font-black uppercase text-white tracking-tighter">
-                Continuous{" "}
-                <span className="text-tertiary italic">Learning</span>
-              </h2>
-              <p className="text-[#adaaab] text-sm uppercase tracking-widest mt-2">
-                Expanding my stack and exploring new frontiers.
-              </p>
-            </div>
-          </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                      <div className="glass p-6 border-white/5">
+                        <Cpu size={24} className="text-tertiary mb-6" />
+                        <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
+                          Python & AI
+                        </h4>
+                        <p className="text-[#adaaab] text-xs leading-relaxed">
+                          Actively learning Python oriented towards Artificial
+                          Intelligence. I am exploring the foundations of
+                          machine learning, neural networks, and how to
+                          integrate AI directly into new and existing codebases.
+                        </p>
+                      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="glass p-6 border-white/5">
-              <Cpu size={24} className="text-tertiary mb-6" />
-              <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                Python & AI
-              </h4>
-              <p className="text-[#adaaab] text-xs leading-relaxed">
-                Actively learning Python oriented towards Artificial Intelligence. I am exploring the foundations of machine learning, neural networks, and how to integrate AI directly into new and existing codebases.
-              </p>
-            </div>
+                      <div className="glass p-6 border-white/5">
+                        <Zap size={24} className="text-primary mb-6" />
+                        <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
+                          Next.js Architecture
+                        </h4>
+                        <p className="text-[#adaaab] text-xs leading-relaxed">
+                          Currently diving deeper into Next.js 14/15, App
+                          Router, and React Server Components. Building
+                          full-stack implementations to maximize SEO and
+                          minimize time-to-interactive for end users.
+                        </p>
+                      </div>
 
-            <div className="glass p-6 border-white/5">
-              <Zap size={24} className="text-primary mb-6" />
-              <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                Next.js Architecture
-              </h4>
-              <p className="text-[#adaaab] text-xs leading-relaxed">
-                Currently diving deeper into Next.js 14/15, App Router, and React Server Components. Building full-stack implementations to maximize SEO and minimize time-to-interactive for end users.
-              </p>
-            </div>
-
-            <div className="glass p-6 border-white/5">
-              <Activity size={24} className="text-secondary mb-6" />
-              <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                AI Workflows
-              </h4>
-              <p className="text-[#adaaab] text-xs leading-relaxed">
-                Getting more involved with AI learning, understanding how LLMs reason, and using autonomous agents to accelerate development cycles and design systems.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-            </>
-          } />
+                      <div className="glass p-6 border-white/5">
+                        <Activity size={24} className="text-secondary mb-6" />
+                        <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
+                          AI Workflows
+                        </h4>
+                        <p className="text-[#adaaab] text-xs leading-relaxed">
+                          Getting more involved with AI learning, understanding
+                          how LLMs reason, and using autonomous agents to
+                          accelerate development cycles and design systems.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </>
+            }
+          />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
@@ -232,8 +272,8 @@ function App() {
       <footer id="contact" className="py-24 border-t border-white/5 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
-            <button 
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-primary font-display font-black text-4xl tracking-tighter hover:text-white transition-colors cursor-pointer text-left"
             >
               RAMIRO TOULEMONDE
@@ -280,8 +320,10 @@ function App() {
       {/* Keyboard Hint */}
       <div className="fixed bottom-6 right-6 hidden md:flex items-center gap-3 py-2 px-4 glass text-[10px] font-display uppercase tracking-widest text-[#adaaab] shadow-[0_0_20px_rgba(161,250,255,0.1)] border-primary/20">
         Press{" "}
-        <kbd className="border border-primary/50 text-primary bg-primary/10 px-2 py-0.5 rounded mx-1 block font-black">⌘ K</kbd> for
-        Command Palette
+        <kbd className="border border-primary/50 text-primary bg-primary/10 px-2 py-0.5 rounded mx-1 block font-black">
+          ⌘ K
+        </kbd>{" "}
+        for Command Palette
       </div>
 
       {/* Map Modal */}
