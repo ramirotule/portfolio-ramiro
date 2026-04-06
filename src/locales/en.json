@@ -97,6 +97,17 @@
       }
     }
   },
+  "interests_section": {
+    "title_prefix": "Continuous",
+    "title_highlight": "Learning",
+    "subtitle": "Expanding my stack and exploring new frontiers.",
+    "python_title": "Python & AI",
+    "python_desc": "Actively learning Python oriented towards Artificial Intelligence. I am exploring the foundations of machine learning, neural networks, and how to integrate AI directly into new and existing codebases.",
+    "nextjs_title": "Next.js Architecture",
+    "nextjs_desc": "Currently diving deeper into Next.js 14/15, App Router, and React Server Components. Building full-stack implementations to maximize SEO and minimize time-to-interactive for end users.",
+    "ai_title": "AI Workflows",
+    "ai_desc": "Getting more involved with AI learning, understanding how LLMs reason, and using autonomous agents to accelerate development cycles and design systems."
+  },
   "mission": {
     "protocol": "OPERATING PROTOCOL",
     "winning": "Winning",
@@ -125,5 +136,222 @@
     "invalid_email": "Please enter a valid communication channel (email)",
     "sidebar_title": "Direct Channels",
     "sidebar_desc": "Prefer standard protocols? Reach out directly via these channels."
+  },
+  "experience": {
+    "title": "Experience",
+    "sorted": "Sorted: Chronological",
+    "active": "Active",
+    "coreImpact": "Core Impact",
+    "dataFiltering": "Data Filtering",
+    "downloadPdf": "Download PDF",
+    "tabs": {
+      "us": "US Experience",
+      "own": "Own Projects",
+      "government": "Government Projects",
+      "interests": "Interests & AI"
+    },
+    "data": {
+      "us": [
+        {
+          "id": "temperies",
+          "company": "TEMPERIES",
+          "role": "Senior Frontend Developer",
+          "period": "03/2022 — PRESENT // USA REMOTE",
+          "status": "CURRENT ENGAGEMENT",
+          "description": [
+            "FasterWay (2024 - Present): Collaborating in the development of a premier fitness and nutrition desktop and mobile app, focusing on high-traffic features and tracking systems.",
+            "Arculix & SecureAuth: Led the UI modernization by replacing BlueprintJS with Material UI and executed a major rebranding project for user security management workflows.",
+            "UMOV (Chile): Developed a HealthTech back-office web application designed to manage clinic users and patient interactions.",
+            "LinkLabs (USA): Implemented complex UI modules based on high-fidelity Figma designs, ensuring a seamless experience for administrative staff."
+          ],
+          "impact": [
+            {
+              "label": "PERFORMANCE GAIN",
+              "value": "40%"
+            },
+            {
+              "label": "MAJOR PROJECTS",
+              "value": "4"
+            }
+          ]
+        }
+      ],
+      "own": [
+        {
+          "id": "stockautos",
+          "company": "STOCKAUTOS",
+          "role": "Fullstack Architect",
+          "period": "2024 — PRESENT // LA PAMPA",
+          "status": "ACTIVE PROJECT",
+          "description": [
+            "Automotive management system with direct n8n automation for publishing vehicles across multiple platforms.",
+            "Built a robust backend using Supabase, optimizing the reach of local dealerships."
+          ],
+          "impact": [
+            {
+              "label": "AUTOMATION",
+              "value": "100%"
+            },
+            {
+              "label": "DEALERSHIPS",
+              "value": "SCALING"
+            }
+          ]
+        },
+        {
+          "id": "alkila",
+          "company": "ALKILA",
+          "role": "Founder & Lead Architect",
+          "period": "2023 — PRESENT // LA PAMPA",
+          "status": "ACTIVE PROJECT",
+          "description": [
+            "Architected and deployed a full-scale real estate marketplace using React, Tailwind and Supabase.",
+            "Integrated complex workflows using n8n to automate lead management and SEO injection.",
+            "Designed an advanced filtering system connecting tenants with local properties efficiently."
+          ],
+          "impact": [
+            {
+              "label": "ACTIVE LISTINGS",
+              "value": "500+"
+            },
+            {
+              "label": "AUTOMATION SAVINGS",
+              "value": "20h/wk"
+            }
+          ]
+        },
+        {
+          "id": "raminformatica",
+          "company": "RAM INFORMÁTICA",
+          "role": "Fullstack Developer",
+          "period": "2023 // E-COMMERCE",
+          "status": "COMPLETED",
+          "description": [
+            "Developed an integrated e-commerce and administrative dashboard.",
+            "Created an automation script in Python that processes WhatsApp messages from suppliers to recalculate profit margins in real-time."
+          ],
+          "impact": [
+            {
+              "label": "PRICING SYNC",
+              "value": "REAL-TIME"
+            },
+            {
+              "label": "BACKEND",
+              "value": "SUPABASE"
+            }
+          ]
+        },
+        {
+          "id": "detakito",
+          "company": "DETAQUITO",
+          "role": "Mobile Developer",
+          "period": "2023 // MOBILE",
+          "status": "SHOWCASE",
+          "description": [
+            "Extreme performance showcase app built in React Native.",
+            "Utilized Fabric Architecture to ensure a fluid and fully native user experience."
+          ],
+          "impact": [
+            {
+              "label": "PERFORMANCE",
+              "value": "60 FPS"
+            },
+            {
+              "label": "ENGINE",
+              "value": "FABRIC"
+            }
+          ]
+        },
+        {
+          "id": "controlgastos",
+          "company": "CONTROLGASTOS",
+          "role": "Frontend Developer",
+          "period": "2022 // FINTECH",
+          "status": "COMPLETED",
+          "description": [
+            "100% responsive Web App built with React and Tailwind for personal financial management.",
+            "Created detailed graphical reports for cash flow, fixed/variable expenses, and credit card tracking."
+          ],
+          "impact": [
+            {
+              "label": "RESPONSIVE",
+              "value": "YES"
+            },
+            {
+              "label": "REPORTING",
+              "value": "REAL-TIME"
+            }
+          ]
+        }
+      ],
+      "government": [
+        {
+          "id": "apa",
+          "company": "A.P.A. - GOV AGENCY",
+          "role": "Frontend Developer",
+          "period": "03/2019 — 01/2022 // LA PAMPA",
+          "status": "PREVIOUS ROLE",
+          "description": [
+            "Led the migration of legacy systems from Visual FoxPro to modern React-based web applications.",
+            "Developed critical modules for payroll, vacation management, and stock control using React, Bootstrap, and Firebase."
+          ],
+          "impact": [
+            {
+              "label": "MIGRATION",
+              "value": "100%"
+            },
+            {
+              "label": "KEY MODULES",
+              "value": "3"
+            }
+          ]
+        }
+      ],
+      "interests": [
+        {
+          "id": "python-ai",
+          "company": "INTELIGENCIA ARTIFICIAL",
+          "role": "Foco Actual: Python & IA",
+          "period": "2024 — PRESENTE // APRENDIZAJE CONTINUO",
+          "status": "ROADMAP DE APRENDIZAJE",
+          "description": [
+            "Explorando conceptos de machine learning y fundamentos de redes neuronales usando Python.",
+            "Construyendo herramientas experimentales impulsadas por IA con énfasis en la integración.",
+            "Profundizando en LLMs, prompt engineering y flujos de trabajo con agentes autónomos."
+          ],
+          "impact": [
+            {
+              "label": "MODELOS DE IA",
+              "value": "3+"
+            },
+            {
+              "label": "PROYECTOS PYTHON",
+              "value": "ACTIVOS"
+            }
+          ]
+        },
+        {
+          "id": "tech-future",
+          "company": "TECNOLOGÍAS DEL FUTURO",
+          "role": "Explorador Tecnológico",
+          "period": "EN CURSO // PASIÓN",
+          "status": "CURIOSIDADES",
+          "description": [
+            "Manteniéndome al día con los últimos avances en Web3, edge computing y arquitecturas web de alto rendimiento.",
+            "Estudiando patrones de interacción emergentes en diseño de interfaces (Brutalismo, Glassmorphism)."
+          ],
+          "impact": [
+            {
+              "label": "PROTOTIPOS",
+              "value": "10+"
+            },
+            {
+              "label": "CURIOSIDAD",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

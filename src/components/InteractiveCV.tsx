@@ -1,102 +1,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Database } from "lucide-react";
-import profilePic from "../assets/profile.png";
+import profilePic from "../assets/profile.jpeg";
+
+import { useTranslation } from 'react-i18next';
 import { PERSONAL_DATA } from "../constants";
 
-const EXPERIENCE_DATA = {
-  us: [
-    {
-      id: "arculix",
-      company: "ARCULIX BY SECUREAUTH",
-      role: "Senior Frontend Architect",
-      period: "2021 — PRESENT // USA REMOTE",
-      status: "CURRENT ENGAGEMENT",
-      description: [
-        "Spearheading the visual evolution of Arculix's identity management dashboard. Focus on high-performance authentication flows, implementing complex state management and zero-trust security visualizations.",
-        "Engineered a modular component library reducing UI build time by 40% across three core products.",
-        "Optimized Auth0 integrations, handling 1M+ monthly active user sessions with zero frontend latency issues.",
-        "Collaborating directly with US-based product owners to translate complex cybersecurity logic into intuitive UX.",
-      ],
-      impact: [
-        { label: "COMPONENT UPTIME", value: "99.9%" },
-        { label: "MICRO-SERVICES MANAGED", value: "60+" },
-      ],
-    },
-    {
-      id: "temperies",
-      company: "TEMPERIES",
-      role: "Software Engineer III",
-      period: "2018 — 2021 // BUENOS AIRES / US",
-      status: "PREVIOUS ROLE",
-      description: [
-        "Lead developer for outsourced US healthcare platforms. Focused on HIPAA-compliant dashboard systems and real-time data visualization using D3.js and React.",
-        "Transitioned the legacy stack to a modern TypeScript architecture, improving developer velocity by 25%.",
-        "Implemented high-accuracy telemetry systems for patient monitoring modules.",
-      ],
-      impact: [
-        { label: "DATA ACCURACY", value: "100%" },
-        { label: "LOAD TIME REDUCTION", value: "1.2s" },
-      ],
-    },
-  ],
-  local: [
-    {
-      id: "alkila",
-      company: "ALKILA",
-      role: "Founder & Lead Architect",
-      period: "2023 — PRESENT // LA PAMPA",
-      status: "ACTIVE PROJECT",
-      description: [
-        "Architected and deployed a full-scale real estate marketplace using Next.js 14 and Supabase.",
-        "Integrated complex server-side workflows using n8n to automate lead management and SEO injection.",
-        "Designed a custom design system focusing on mobile-first accessibility for local users.",
-      ],
-      impact: [
-        { label: "ACTIVE LISTINGS", value: "500+" },
-        { label: "AUTOMATION SAVINGS", value: "20h/wk" },
-      ],
-    },
-  ],
-  interests: [
-    {
-      id: "python-ai",
-      company: "INTELIGENCIA ARTIFICIAL",
-      role: "Foco Actual: Python & IA",
-      period: "2024 — PRESENTE // APRENDIZAJE CONTINUO",
-      status: "ROADMAP DE APRENDIZAJE",
-      description: [
-        "Explorando conceptos de machine learning y fundamentos de redes neuronales usando Python.",
-        "Construyendo herramientas experimentales impulsadas por IA con énfasis en la integración.",
-        "Profundizando en LLMs, prompt engineering y flujos de trabajo con agentes autónomos.",
-      ],
-      impact: [
-        { label: "MODELOS DE IA", value: "3+" },
-        { label: "PROYECTOS PYTHON", value: "ACTIVOS" },
-      ],
-    },
-    {
-      id: "tech-future",
-      company: "TECNOLOGÍAS DEL FUTURO",
-      role: "Explorador Tecnológico",
-      period: "EN CURSO // PASIÓN",
-      status: "CURIOSIDADES",
-      description: [
-        "Manteniéndome al día con los últimos avances en Web3, edge computing y arquitecturas web de alto rendimiento.",
-        "Estudiando patrones de interacción emergentes en diseño de interfaces (Brutalismo, Glassmorphism).",
-      ],
-      impact: [
-        { label: "PROTOTIPOS", value: "10+" },
-        { label: "CURIOSIDAD", value: "100%" },
-      ],
-    },
-  ],
-};
 
 const InteractiveCV = () => {
-  const [activeTab, setActiveTab] = useState<"us" | "local" | "interests">(
+  const { t } = useTranslation();
+  const [activeTab, setActiveTab] = useState<"us" | "own" | "government" | "interests">(
     "us",
   );
+
+  const EXPERIENCE_DATA = t("experience.data", { returnObjects: true }) as any;
 
   return (
     <section
@@ -126,11 +43,11 @@ const InteractiveCV = () => {
             <div className="space-y-6">
               <div className="group">
                 <p className="text-[10px] text-[#484849] font-display uppercase tracking-widest mb-4">
-                  Data Filtering
+                  {t("experience.dataFiltering")}
                 </p>
                 <div className="flex items-center justify-between py-2 border-b border-white/5">
                   <span className="text-[10px] text-white/60 font-display uppercase tracking-widest">
-                    US Experience
+                    {t("experience.tabs.us")}
                   </span>
                   <button
                     onClick={() => setActiveTab("us")}
@@ -144,21 +61,35 @@ const InteractiveCV = () => {
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-white/5">
                   <span className="text-[10px] text-white/60 font-display uppercase tracking-widest">
-                    Local Projects
+                    {t("experience.tabs.own")}
                   </span>
                   <button
-                    onClick={() => setActiveTab("local")}
-                    className={`w-8 h-4 rounded-full transition-colors relative ${activeTab === "local" ? "bg-secondary" : "bg-white/10"}`}
+                    onClick={() => setActiveTab("own")}
+                    className={`w-8 h-4 rounded-full transition-colors relative ${activeTab === "own" ? "bg-secondary" : "bg-white/10"}`}
                   >
                     <motion.div
-                      animate={{ x: activeTab === "local" ? 16 : 0 }}
+                      animate={{ x: activeTab === "own" ? 16 : 0 }}
                       className="absolute top-0.5 left-0.5 w-3 h-3 bg-white rounded-full"
                     />
                   </button>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-white/5">
                   <span className="text-[10px] text-white/60 font-display uppercase tracking-widest">
-                    Interests & AI
+                    {t("experience.tabs.government")}
+                  </span>
+                  <button
+                    onClick={() => setActiveTab("government")}
+                    className={`w-8 h-4 rounded-full transition-colors relative ${activeTab === "government" ? "bg-[#e2b714]" : "bg-white/10"}`}
+                  >
+                    <motion.div
+                      animate={{ x: activeTab === "government" ? 16 : 0 }}
+                      className="absolute top-0.5 left-0.5 w-3 h-3 bg-white rounded-full"
+                    />
+                  </button>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-white/5">
+                  <span className="text-[10px] text-white/60 font-display uppercase tracking-widest">
+                    {t("experience.tabs.interests")}
                   </span>
                   <button
                     onClick={() => setActiveTab("interests")}
@@ -174,7 +105,7 @@ const InteractiveCV = () => {
 
               <button className="w-full py-4 border border-primary/20 text-white font-display text-[10px] uppercase tracking-[0.3em] hover:bg-primary hover:text-background transition-all flex items-center justify-center gap-3">
                 <Download size={14} />
-                Download PDF
+                {t("experience.downloadPdf")}
               </button>
             </div>
           </div>
@@ -202,17 +133,17 @@ const InteractiveCV = () => {
           <div className="flex items-end justify-between border-b border-white/5 pb-6">
             <div>
               <h2 className="text-5xl font-display font-black text-white uppercase tracking-tighter">
-                Experience
+                {t("experience.title")}
               </h2>
               <p className="text-[10px] text-[#484849] font-display uppercase tracking-[0.4em] mt-2">
                 /root/path/expericience_arculix
               </p>
             </div>
             <div className="hidden md:flex items-center gap-8 text-[10px] font-display uppercase tracking-widest text-[#484849]">
-              <span>Sorted: Chronological</span>
+              <span>{t("experience.sorted")}</span>
               <span className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                Active
+                {t("experience.active")}
               </span>
             </div>
           </div>
@@ -271,7 +202,7 @@ const InteractiveCV = () => {
                       {/* IMPACT PANEL */}
                       <div className="w-full xl:w-64 bg-white/[0.02] border border-white/5 p-8 flex flex-col justify-center">
                         <span className="text-[9px] text-white/20 font-display uppercase tracking-widest mb-8">
-                          Core Impact
+                          {t("experience.coreImpact")}
                         </span>
                         <div className="space-y-8">
                           {item.impact.map((stat, i) => (

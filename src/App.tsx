@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -54,6 +55,7 @@ const LinkedinIcon = ({ size }: { size: number }) => (
 );
 
 function App() {
+  const { t } = useTranslation();
   const [isCommandOpen, setIsCommandOpen] = useState(false);
   const [isMapOpen, setIsMapOpen] = useState(false);
   const navigate = useNavigate();
@@ -211,11 +213,11 @@ function App() {
                       </div>
                       <div>
                         <h2 className="text-4xl md:text-6xl font-display font-black uppercase text-white tracking-tighter">
-                          Continuous{" "}
-                          <span className="text-tertiary italic">Learning</span>
+                          {t('interests_section.title_prefix')}{" "}
+                          <span className="text-tertiary italic">{t('interests_section.title_highlight')}</span>
                         </h2>
                         <p className="text-[#adaaab] text-sm uppercase tracking-widest mt-2">
-                          Expanding my stack and exploring new frontiers.
+                          {t('interests_section.subtitle')}
                         </p>
                       </div>
                     </div>
@@ -224,38 +226,30 @@ function App() {
                       <div className="glass p-6 border-white/5">
                         <Cpu size={24} className="text-tertiary mb-6" />
                         <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                          Python & AI
+                          {t('interests_section.python_title')}
                         </h4>
                         <p className="text-[#adaaab] text-xs leading-relaxed">
-                          Actively learning Python oriented towards Artificial
-                          Intelligence. I am exploring the foundations of
-                          machine learning, neural networks, and how to
-                          integrate AI directly into new and existing codebases.
+                          {t('interests_section.python_desc')}
                         </p>
                       </div>
 
                       <div className="glass p-6 border-white/5">
                         <Zap size={24} className="text-primary mb-6" />
                         <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                          Next.js Architecture
+                          {t('interests_section.nextjs_title')}
                         </h4>
                         <p className="text-[#adaaab] text-xs leading-relaxed">
-                          Currently diving deeper into Next.js 14/15, App
-                          Router, and React Server Components. Building
-                          full-stack implementations to maximize SEO and
-                          minimize time-to-interactive for end users.
+                          {t('interests_section.nextjs_desc')}
                         </p>
                       </div>
 
                       <div className="glass p-6 border-white/5">
                         <Activity size={24} className="text-secondary mb-6" />
                         <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                          AI Workflows
+                          {t('interests_section.ai_title')}
                         </h4>
                         <p className="text-[#adaaab] text-xs leading-relaxed">
-                          Getting more involved with AI learning, understanding
-                          how LLMs reason, and using autonomous agents to
-                          accelerate development cycles and design systems.
+                          {t('interests_section.ai_desc')}
                         </p>
                       </div>
                     </div>
