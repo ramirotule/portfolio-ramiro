@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Aquí debes reemplazar "tudominio.com" por el dominio final que uses cuando lo publiques
-Sitemap: https://tudominio.com/sitemap.xml
+# Aquí debes reemplazar "wwww.ramirotoulemonde.com.ar" por el dominio final que uses cuando lo publiques
+Sitemap: https://www.ramirotoulemonde.com.ar/sitemap.xml
