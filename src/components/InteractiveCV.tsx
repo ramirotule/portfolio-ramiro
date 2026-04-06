@@ -41,7 +41,7 @@ const InteractiveCV = () => {
     ...EXPERIENCE_DATA.us,
     ...EXPERIENCE_DATA.own,
     ...EXPERIENCE_DATA.government,
-  ].sort((a: ExperienceItem, b: ExperienceItem) => {
+  ].sort(() => {
     // Keeping original defined order for now
     return 0;
   });
