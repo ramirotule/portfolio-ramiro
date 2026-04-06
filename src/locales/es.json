@@ -1,0 +1,125 @@
+{
+  "common": {
+    "name": "Ramiro Toulemonde",
+    "role": "Desarrollador Senior Frontend",
+    "location": "La Pampa, Argentina"
+  },
+  "hero": {
+    "title": "Analista de Sistemas desde Argentina para el Mundo",
+    "subtitle": "Arquitecto Técnico diseñando productos digitales de alto rendimiento.",
+    "codeComment": "La excelencia no es un acto, es un hábito"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "interests": "Intereses e IA",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "download_cv": "Descargar CV"
+  },
+  "about": {
+    "specialist": "Especialista",
+    "evolution": "Evolución",
+    "origin": "Origen y",
+    "frontend": "Frontend",
+    "profile_html": "Soy un Especialista Frontend dedicado con más de <span class=\"text-white\">6 años de experiencia</span> creando aplicaciones web y móviles de alto rendimiento. Mi experiencia radica en el ecosistema <span class=\"text-primary\"> React JS & React Native</span>, donde aprovecho <span class=\"text-secondary\">TypeScript</span> para construir arquitecturas robustas y type-safe que resisten el paso del tiempo.",
+    "qa_title": "Filosofía Técnica y",
+    "qa_mindset": "Mentalidad QA",
+    "qa_html": "Lo que distingue mi enfoque es una mentalidad de priorizar la calidad, formada por mi experiencia en <span class=\"text-white\">Aseguramiento de Calidad (QA)</span>. Habiendo pasado tiempo en un rol de QA, veo el código a través de una lente muy crítica, anticipando casos extremos y fallas potenciales mucho antes de que lleguen a producción. Soy un firme defensor de:",
+    "qa_points": [
+      "<span class=\"text-primary font-bold\">Confiabilidad Basada en Pruebas:</span> Implementación de pruebas unitarias exhaustivas con alta cobertura para garantizar que el código no solo sea funcional, sino <span class=\"text-white\">mantenible</span> y <span class=\"text-white\">resiliente</span>.",
+      "<span class=\"text-primary font-bold\">Arquitectura Escalable:</span> Escribir código modular y limpio que simplifique el proceso de depuración y facilite el crecimiento a largo plazo.",
+      "<span class=\"text-primary font-bold\">Diseño Centrado en el Usuario:</span> Acortar la brecha entre la excelencia técnica y las experiencias de usuario fluidas, asegurando que cada interfaz sea tan intuitiva como eficiente."
+    ],
+    "soft_skills_title": "Habilidades Blandas y Proactividad",
+    "soft_skills_html": "Me considero un profesional proactivo con excelentes habilidades blandas, siempre con ganas de aprender y listo para asumir nuevos desafíos. Prospero en entornos colaborativos donde puedo contribuir al ciclo completo de desarrollo, desde los conceptos iniciales de UI/UX hasta la implementación final y validación de calidad.",
+    "journey_p1_html": "Mi historia en la tecnología comenzó en <span class=\"text-white\">2005</span> como empleado estatal, donde desarrollé sistemas administrativos utilizando <span class=\"text-white\">Visual FoxPro</span>. Esta experiencia inicial me dio una base sólida en lógica y gestión de bases de datos.",
+    "ent_title": "Emprendedurismo y Crecimiento",
+    "ent_years": "(2008 – 2021)",
+    "ent_html": "En 2008, canalicé mis conocimientos técnicos en mi propio negocio. Durante más de una década, administré una tienda minorista de servicios informáticos y hardware. Este período fue crucial para desarrollar mi mentalidad proactiva y mis habilidades blandas, ya que era directamente responsable de la resolución de problemas técnicos y el éxito del cliente.",
+    "dt_title": "La Transformación Digital",
+    "dt_years": "(2019 – Presente)",
+    "dt_p1_html": "En 2019, fui invitado a regresar a mi lugar de trabajo original en el sector público para liderar una transición crítica. Con una perspectiva más madura, propuse y ejecuté la migración de sistemas informáticos heredados a arquitecturas web modernas.",
+    "dt_p2_html": "Usando <span class=\"text-primary\">React</span>, <span class=\"text-primary\">Firebase</span> y <span class=\"text-primary\">Bootstrap</span>, migré exitosamente módulos administrativos clave, incluyendo:",
+    "dt_points": [
+      "Sistemas de Adquisiciones y Compras",
+      "Gestión de Inventario y Almacenes",
+      "Recursos Humanos y Nóminas"
+    ],
+    "dt_p3_html": "Esta experiencia fue un punto de inflexión, que me permitió dominar los flujos de trabajo de frontend modernos antes de la transición completa al sector privado en <a href=\"https://www.temperies.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white hover:text-primary transition-colors underline underline-offset-4 decoration-white/30 hover:decoration-primary/60\">Temperies</a>.",
+    "profile_title": "Perfil Profesional",
+    "journey_title": "Mi Historia Profesional",
+    "beyond_coding": "MÁS ALLÁ DEL CÓDIGO (Mi Proyecto Más Importante)",
+    "drives_me_highlight": "Me Motiva",
+    "drives_me_title": "Qué",
+    "drives_me_intro": "Cuando no estoy en mi escritorio, generalmente me enfoco en las cosas que me mantienen inspirado y con los pies en la tierra:",
+    "family_title": "La Familia Primero:",
+    "family_desc": "Llevo 14 años felizmente casado y soy un orgulloso padre de dos niños: una hija de 13 y un hijo de 10 años. Son mi mayor motivación.",
+    "cars_title": "Restaurar Autos Clásicos:",
+    "cars_desc": "Hay algo increíblemente gratificante en devolverle la vida a un vehículo antiguo. ¡Es el mismo deseo de 'resolver problemas' que tengo al programar, pero con mucha más grasa!",
+    "music_title": "Música:",
+    "music_desc": "Me encanta tocar el piano y la guitarra. Es mi manera favorita de apagar el cerebro lógico y conectar con algo más creativo.",
+    "travel_title": "Viajar:",
+    "travel_desc": "Explorar lugares nuevos con mi familia es nuestra manera favorita de crear recuerdos invaluables juntos.",
+    "hobbies": {
+      "music": "Tocar Instrumentos (Piano y Guitarra)",
+      "cars": "Restaurar autos antiguos",
+      "family": "Viajar con mi familia"
+    }
+  },
+  "projects": {
+    "section_title_prefix": "",
+    "section_title_primary": "Portfolio",
+    "section_title_suffix": "Arquitectónico",
+    "section_subtitle": "PROYECTOS SELECCIONADOS",
+    "description": "Transformando sectores a través del código. Desde el sector automotriz, inmobiliario y el ecommerce, desarrollo arquitecturas de interfaz sólidas que impulsan el crecimiento urbano y digital. Me guío por la precisión, la escalabilidad y la lógica.",
+    "list": {
+      "saas": {
+        "title": "STOCK AUTOS (SaaS)",
+        "content": "Sistema de gestión automotriz con automatización n8n y backend Supabase."
+      },
+      "alkila": {
+        "title": "Alkila",
+        "content": "Plataforma inmobiliaria con impacto local en Santa Rosa."
+      },
+      "informatica": {
+        "title": "RAM Informática",
+        "content": "Integración de motor de precios en Python + WhatsApp API."
+      },
+      "detakito": {
+        "title": "deTaquito — Portal de Dueños",
+        "content": "Demostración de rendimiento en React Native con Fabric Architecture."
+      }
+    }
+  },
+  "mission": {
+    "protocol": "PROTOCOLO OPERATIVO",
+    "winning": "Fórmula",
+    "formula": "Ganadora",
+    "humor_title": "Buen Humor",
+    "humor_desc": "El desarrollo de software no tiene que ser rígido. Mantener un ambiente positivo y colaborativo acelera la resolución de problemas y fomenta la creatividad en el código.",
+    "proactivity_title": "Proactividad",
+    "proactivity_desc": "No solo escribo código; anticipo necesidades, propongo mejoras arquitectónicas reales y actúo antes de que los cuellos de botella impacten el producto.",
+    "responsibility_title": "Responsabilidad",
+    "responsibility_desc": "Ownership total de las métricas. Desde el primer commit hasta el despliegue a producción, el éxito del proyecto es mi prioridad absoluta.",
+    "result": "RESULTADO:",
+    "success": "Éxito Asegurado"
+  },
+  "contact": {
+    "title": "Iniciar Protocolo",
+    "subtitle": "Contacto",
+    "name_label": "Identificación (Nombre)",
+    "name_placeholder": "Juan Pérez",
+    "email_label": "Canal de Com (Email)",
+    "email_placeholder": "juan@ejemplo.com",
+    "message_label": "Carga Útil (Mensaje)",
+    "message_placeholder": "¿Cómo podemos construir el futuro juntos?",
+    "submit": "Enviar Transmisión",
+    "submitting": "Transmitiendo...",
+    "success": "Mensaje Entregado con Éxito",
+    "invalid_email": "Por favor ingresa un canal (email) válido.",
+    "sidebar_title": "Canales Directos",
+    "sidebar_desc": "¿Prefieres protocolos estándar? Contáctame directamente por aquí."
+  }
+}

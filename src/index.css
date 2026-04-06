@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #a1faff;
+  --color-secondary: #d575ff;
+  --color-tertiary: #f3ffca;
+  --color-background: #0e0e0f;
+  --color-surface: #0e0e0f;
+  --color-surface-container: #1a191b;
+  --color-surface-high: #201f21;
+  --color-surface-highest: #262627;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  
+  --radius-none: 0px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white font-body;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold uppercase tracking-tight;
+  }
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(38, 38, 39, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(72, 72, 73, 0.15);
+}
+
+/* Neon Glow utilities */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(161, 250, 255, 0.2);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px rgba(213, 117, 255, 0.2);
+}

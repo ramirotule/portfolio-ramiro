@@ -1,0 +1,129 @@
+{
+  "common": {
+    "name": "Ramiro Toulemonde",
+    "role": "Senior Frontend Developer",
+    "location": "La Pampa, Argentina"
+  },
+  "hero": {
+    "title": "System Analyst from Argentina to the World",
+    "subtitle": "Technical Architect crafting high-performance digital products.",
+    "codeComment": "Excellence is not an act, it is a habit"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "interests": "Interests & AI",
+    "experience": "Experience",
+    "contact": "Contact",
+    "download_cv": "Download CV"
+  },
+  "about": {
+    "specialist": "Specialist",
+    "evolution": "Evolution",
+    "origin": "Origin &",
+    "frontend": "Frontend",
+    "profile_html": "I am a dedicated Frontend Specialist with over <span class=\"text-white\">6 years of experience</span> building high-performance web and mobile applications. My expertise lies in the <span class=\"text-primary\">React JS & React Native </span> ecosystem, where I leverage <span class=\"text-secondary\">TypeScript</span> to build robust, type-safe architectures that stand the test of time.",
+    "qa_title": "Technical Philosophy &",
+    "qa_mindset": "QA Mindset",
+    "qa_html": "What sets my approach apart is a quality-first mindset shaped by my background in <span class=\"text-white\">Quality Assurance (QA)</span>. Having spent time in a QA role, I view code through a highly critical lens, anticipating edge cases and potential failures long before they reach production. I am a firm advocate for:",
+    "qa_points": [
+      "<span class=\"text-primary font-bold\">Test-Driven Reliability:</span> Implementing comprehensive Unit Testing with high coverage to ensure code is not just functional, but <span class=\"text-white\">maintainable</span> and <span class=\"text-white\">resilient</span>.",
+      "<span class=\"text-primary font-bold\">Scalable Architecture:</span> Writing clean, modular code that simplifies the debugging process and facilitates long-term growth.",
+      "<span class=\"text-primary font-bold\">User-Centric Design:</span> Bridging the gap between technical excellence and seamless user experiences, ensuring every interface is as intuitive as it is performant."
+    ],
+    "soft_skills_title": "Soft Skills & Proactivity",
+    "soft_skills_html": "I consider myself a proactive professional with excellent soft skills, always eager to learn and ready to take on new challenges. I thrive in collaborative environments where I can contribute to the full development lifecycle—from initial UI/UX concepts to final deployment and quality validation.",
+    "journey_p1_html": "My story in technology began in <span class=\"text-white\">2005</span> as a state employee, where I developed administrative systems using <span class=\"text-white\">Visual FoxPro</span>. This early experience gave me a solid foundation in logic and database management.",
+    "ent_title": "Entrepreneurship & Growth",
+    "ent_years": "(2008 – 2021)",
+    "ent_html": "In 2008, I channeled my technical knowledge into my own business. For over a decade, I managed a computer services and hardware retail store. This period was crucial for developing my proactive mindset and soft skills, as I was directly responsible for technical problem-solving and customer success.",
+    "dt_title": "The Digital Transformation",
+    "dt_years": "(2019 – Present)",
+    "dt_p1_html": "In 2019, I was invited back to my original public sector workplace to lead a critical transition. With a more mature perspective, I proposed and executed the migration of legacy desktop systems to modern web architectures.",
+    "dt_p2_html": "Using <span class=\"text-primary\">React</span>, <span class=\"text-primary\">Firebase</span>, and <span class=\"text-primary\">Bootstrap</span>, I successfully migrated key administrative modules, including:",
+    "dt_points": [
+      "Procurement & Purchasing Systems",
+      "Inventory & Warehouse Management",
+      "Human Resources & Payroll"
+    ],
+    "dt_p3_html": "This experience was a turning point, allowing me to master modern frontend workflows before transitioning fully into the private sector at <a href=\"https://www.temperies.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white hover:text-primary transition-colors underline underline-offset-4 decoration-white/30 hover:decoration-primary/60\">Temperies</a>.",
+    "profile_title": "Professional Profile",
+    "journey_title": "My Professional Journey",
+    "beyond_coding": "BEYOND CODING (My Most Important Project)",
+    "drives_me_highlight": "Drives Me",
+    "drives_me_title": "What",
+    "drives_me_intro": "When I’m not at my desk, I’m usually focusing on the things that keep me grounded and inspired:",
+    "family_title": "Family First:",
+    "family_desc": "I have been happily married for 14 years, and I am a proud father of two—a 13-year-old daughter and a 10-year-old son. They are my greatest motivation.",
+    "cars_title": "Restoring Classic Cars:",
+    "cars_desc": "There is something incredibly rewarding about bringing an old vehicle back to life. It’s the same 'problem-solving' itch I get from coding, but with a lot more grease!",
+    "music_title": "Music:",
+    "music_desc": "I love playing the piano and guitar. It’s my favorite way to switch off the logical brain and tap into something more creative.",
+    "travel_title": "Traveling:",
+    "travel_desc": "Exploring new places with my family is our favorite way to create lasting memories together.",
+    "hobbies": {
+      "music": "Playing Instruments (Piano and Guitar)",
+      "cars": "Restoring old cars",
+      "family": "Travelling with my family"
+    }
+  },
+  "projects": {
+    "section_title_prefix": "Architectural",
+    "section_title_primary": "Portfolio",
+    "section_title_suffix": "",
+    "section_subtitle": "SELECTED PROJECTS",
+    "description": "Transforming industries through code. From the automotive, real estate, and e-commerce sectors, I develop robust interface architectures that drive urban and digital growth. I am guided by precision, scalability, and logic.",
+    "list": {
+      "saas": {
+        "title": "STOCKAUTOS",
+        "content": "Sistema de gestión automotriz con automatización mediante n8n. Permite la publicación masiva o individual de vehículos de forma automática en múltiples plataformas, optimizando el alcance de concesionarias. Backend robusto sobre Supabase."
+      },
+      "alkila": {
+        "title": "Alkila",
+        "content": "Plataforma inmobiliaria enfocada en el mercado de Santa Rosa. Desarrollada con React, Tailwind y Supabase, ofrece un sistema avanzado de filtros y búsqueda para conectar inquilinos con propiedades locales de forma eficiente."
+      },
+      "RAM Informática": {
+        "title": "RAM Informática",
+        "content": "E-commerce y dashboard administrativo integrado. Utiliza React y Python para automatizar la actualización de precios: un script procesa mensajes de WhatsApp Business de proveedores y recalcula márgenes de ganancia en tiempo real sobre Supabase."
+      },
+      "detakito": {
+        "title": "deTaquito",
+        "content": "Showcase de rendimiento extremo en React Native utilizando Fabric Architecture para una experiencia de usuario fluida y nativa."
+      },
+      "controlgastos": {
+        "title": "ControlGastos",
+        "content": "Web App 100% responsiva (React + Tailwind) para gestión financiera personal. Incluye control de gastos fijos, variables, tarjetas de crédito y préstamos, con reportes gráficos detallados sobre el flujo de caja. Backend en Supabase."
+      }
+    }
+  },
+  "mission": {
+    "protocol": "OPERATING PROTOCOL",
+    "winning": "Winning",
+    "formula": "Formula",
+    "humor_title": "Good Humor",
+    "humor_desc": "Software development doesn't have to be rigid. Maintaining a positive and collaborative environment accelerates problem-solving and fosters creativity in code.",
+    "proactivity_title": "Proactivity",
+    "proactivity_desc": "I don't just write code; I anticipate needs, propose real architectural improvements, and act before bottlenecks impact the product.",
+    "responsibility_title": "Responsibility",
+    "responsibility_desc": "Total ownership of the metrics. From the first commit to production deployment, the success of the project is my absolute priority.",
+    "result": "RESULT:",
+    "success": "Guaranteed Success"
+  },
+  "contact": {
+    "title": "Initiate Protocol",
+    "subtitle": "Get in Touch",
+    "name_label": "Identification (Name)",
+    "name_placeholder": "John Doe",
+    "email_label": "Comm Channel (Email)",
+    "email_placeholder": "john@example.com",
+    "message_label": "Payload (Message)",
+    "message_placeholder": "How can we build the future together?",
+    "submit": "Send Transmission",
+    "submitting": "Transmitting...",
+    "success": "Message Delivered Successfully",
+    "invalid_email": "Please enter a valid communication channel (email)",
+    "sidebar_title": "Direct Channels",
+    "sidebar_desc": "Prefer standard protocols? Reach out directly via these channels."
+  }
+}
