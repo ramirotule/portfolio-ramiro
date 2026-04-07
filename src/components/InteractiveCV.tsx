@@ -10,11 +10,11 @@ import {
   Layout,
 } from "lucide-react";
 
-import profilePic from "../assets/profile.jpeg";
-
 import { useTranslation } from "react-i18next";
 import { PERSONAL_DATA } from "../constants";
-import cvPdf from "../assets/cv.pdf";
+
+const profilePic = "/assets/profile.jpeg";
+const cvPdf = "/assets/cv.pdf";
 
 interface ImpactItem {
   label: string;

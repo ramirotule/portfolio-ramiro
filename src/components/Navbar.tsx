@@ -4,7 +4,7 @@ import { PERSONAL_DATA } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Download, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import cvPdf from '../assets/cv.pdf';
+const cvPdf = "/assets/cv.pdf";
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();

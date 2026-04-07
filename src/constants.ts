@@ -50,8 +50,8 @@ export const PROJECTS = [
     tech: ["n8n", "Supabase", "React"],
     link: "https://stockautos.vercel.app/",
     images: [
-      "/src/assets/stockautos.png",
-      "/src/assets/stockautos-dashboard.png",
+      "/assets/stockautos.png",
+      "/assets/stockautos-dashboard.png",
     ],
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS = [
     description: "Real Estate Platform with local impact in Santa Rosa.",
     tech: ["React JS", "Tailwind CSS"],
     link: "https://alkila.vercel.app/",
-    images: ["/src/assets/alkila.png"],
+    images: ["/assets/alkila.png"],
   },
   {
     id: "raminformatica",
@@ -69,8 +69,8 @@ export const PROJECTS = [
     tech: ["Python", "WhatsApp API"],
     link: "https://www.raminformatica.com.ar",
     images: [
-      "/src/assets/raminformatica.png",
-      "/src/assets/raminformatica-dashboard.png",
+      "/assets/raminformatica.png",
+      "/assets/raminformatica-dashboard.png",
     ],
   },
   {
@@ -80,8 +80,8 @@ export const PROJECTS = [
     tech: ["React Native", "Fabric", "MobX"],
     link: "https://detakito-landing.vercel.app/",
     images: [
-      "/src/assets/detaquito.png",
-      "/src/assets/detaquito-dashboard1.png",
+      "/assets/detaquito.png",
+      "/assets/detaquito-dashboard1.png",
     ],
   },
   {
@@ -90,6 +90,6 @@ export const PROJECTS = [
     description: "Responsive web app for personal finance management.",
     tech: ["React", "Tailwind", "Supabase"],
     link: "#",
-    images: ["/src/assets/controlgastos.png"],
+    images: ["/assets/controlgastos.png"],
   },
 ];

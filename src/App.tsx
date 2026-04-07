@@ -21,7 +21,7 @@ import {
   Zap,
   X,
 } from "lucide-react";
-import cvPdf from "./assets/cv.pdf";
+const cvPdf = "/assets/cv.pdf";
 
 const GithubIcon = ({ size }: { size: number }) => (
   <svg
