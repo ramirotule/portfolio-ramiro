@@ -8,7 +8,7 @@ import BentoGrid from "./components/BentoGrid";
 import InteractiveCV from "./components/InteractiveCV";
 import Mission from "./components/Mission";
 import Contact from "./components/Contact";
-import { PROJECTS } from "./constants";
+import { PROJECTS, PERSONAL_DATA } from "./constants";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Search,
@@ -241,11 +241,27 @@ function App() {
                         })),
                         {
                           id: "about-profile",
-                          title: t("about.profile_title"),
+                          title: t('about.profile_title'),
                           desc: t("about.profile_html"),
                           path: "/about",
-                          type: t("nav.about"),
+                          type: t('nav.about')
                         },
+                        // Main Tech Stack
+                        ...PERSONAL_DATA.stack.map(s => ({
+                          id: `skill-${s}`,
+                          title: s,
+                          desc: `Technology and skill proficiency: ${s}`,
+                          path: "/experience",
+                          type: "Tech Stack"
+                        })),
+                        // Workflow Tools
+                        ...PERSONAL_DATA.workflowTools.map(w => ({
+                          id: `tool-${w}`,
+                          title: w,
+                          desc: `Professional workflow tool and methodology: ${w}`,
+                          path: "/experience",
+                          type: "Workflow Tools"
+                        })),
                         {
                           id: "action-cv",
                           title: t("nav.download_cv"),

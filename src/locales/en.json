@@ -16,7 +16,7 @@
     "interests": "Interests & AI",
     "experience": "Experience",
     "contact": "Contact",
-    "download_cv": "Download Resume PDF"
+    "download_cv": "Download Resume (PDF)"
   },
   "command": {
     "placeholder": "Type a command or search...",
@@ -166,7 +166,13 @@
     "english_level": "English B2 (Upper Intermediate)",
     "spanish_level": "Spanish (Native)",
     "tools_title": "Workflow Tools",
-    "methodology_title": "Design System & Methodology",
+    "methodology_title": "Agile Work Methodologies",
+    "methodologies": [
+      "Daily 15 min every day",
+      "Sprints Planning",
+      "Sprints Retrospective",
+      "Sprints Refinement"
+    ],
     "tabs": {
       "us": "USA Experience",
       "own": "Own Projects",

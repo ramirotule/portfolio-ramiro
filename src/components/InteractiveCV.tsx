@@ -112,11 +112,13 @@ const InteractiveCV = () => {
             </div>
 
             <div className="space-y-6">
-              <div 
+              <div
                 className="flex items-center justify-between mb-4 group cursor-pointer"
                 onClick={() => toggleTab("us")}
               >
-                <span className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "us" ? "text-primary" : "text-[#484849] group-hover:text-primary"}`}>
+                <span
+                  className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "us" ? "text-primary" : "text-[#484849] group-hover:text-primary"}`}
+                >
                   {t("experience.tabs.us")}
                 </span>
                 <button
@@ -129,11 +131,13 @@ const InteractiveCV = () => {
                 </button>
               </div>
 
-              <div 
+              <div
                 className="flex items-center justify-between mb-4 group cursor-pointer"
                 onClick={() => toggleTab("own")}
               >
-                <span className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "own" ? "text-secondary" : "text-[#484849] group-hover:text-secondary"}`}>
+                <span
+                  className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "own" ? "text-secondary" : "text-[#484849] group-hover:text-secondary"}`}
+                >
                   {t("experience.tabs.own")}
                 </span>
                 <button
@@ -146,11 +150,13 @@ const InteractiveCV = () => {
                 </button>
               </div>
 
-              <div 
+              <div
                 className="flex items-center justify-between mb-4 group cursor-pointer"
                 onClick={() => toggleTab("government")}
               >
-                <span className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "government" ? "text-tertiary" : "text-[#484849] group-hover:text-tertiary"}`}>
+                <span
+                  className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "government" ? "text-tertiary" : "text-[#484849] group-hover:text-tertiary"}`}
+                >
                   {t("experience.tabs.government")}
                 </span>
                 <button
@@ -163,11 +169,13 @@ const InteractiveCV = () => {
                 </button>
               </div>
 
-              <div 
+              <div
                 className="flex items-center justify-between mb-4 group cursor-pointer"
                 onClick={() => toggleTab("interests")}
               >
-                <span className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "interests" ? "text-emerald-500" : "text-[#484849] group-hover:text-emerald-500"}`}>
+                <span
+                  className={`text-[10px] font-display uppercase tracking-widest transition-colors ${activeTab === "interests" ? "text-emerald-500" : "text-[#484849] group-hover:text-emerald-500"}`}
+                >
                   {t("experience.tabs.interests")}
                 </span>
                 <button
@@ -212,17 +220,10 @@ const InteractiveCV = () => {
               <Tool size={12} /> {t("experience.tools_title")}
             </p>
             <div className="flex flex-wrap gap-2">
-              {[
-                "Slack",
-                "Discord",
-                "Jira",
-                "Antigravity",
-                "Claude Code",
-                "VS Code",
-              ].map((tool: string) => (
+              {PERSONAL_DATA.workflowTools.map((tool: string) => (
                 <span
                   key={tool}
-                  className="text-[8px] font-display uppercase tracking-widest border border-white/5 px-2 py-1 text-white/30 hover:text-secondary transition-colors"
+                  className="px-3 py-1 bg-white/[0.03] border border-white/5 text-[8px] font-display uppercase tracking-widest text-white/40 hover:text-primary hover:border-primary/20 transition-all cursor-crosshair"
                 >
                   {tool}
                 </span>
@@ -234,11 +235,28 @@ const InteractiveCV = () => {
             <p className="text-[10px] text-[#484849] font-display uppercase tracking-widest mb-4 flex items-center gap-2">
               <Activity size={12} /> {t("experience.methodology_title")}
             </p>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-[10px] font-display uppercase tracking-widest text-white/60">
-                Agile
-              </span>
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-[10px] font-display uppercase tracking-widest text-[#adaaab]">
+                  SCRUM Framework
+                </span>
+              </div>
+              <div className="pl-4 border-l border-white/5 space-y-3">
+                {(
+                  (t("experience.methodologies", {
+                    returnObjects: true,
+                  }) as string[]) || []
+                ).map((m, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-2 text-[8px] font-display uppercase tracking-widest text-white/40"
+                  >
+                    <div className="w-1 h-[1px] bg-white/20" />
+                    {m}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </aside>
@@ -277,8 +295,9 @@ const InteractiveCV = () => {
                 className="space-y-6"
               >
                 {activeTab && activeTab !== "interests" ? (
-                  [...EXPERIENCE_DATA[activeTab as keyof ExperienceCategories]].reverse().map(
-                    (item: ExperienceItem) => (
+                  [...EXPERIENCE_DATA[activeTab as keyof ExperienceCategories]]
+                    .reverse()
+                    .map((item: ExperienceItem) => (
                       <div
                         key={item.id}
                         className="glass p-12 relative group border-l-2 border-l-transparent hover:border-l-primary transition-all duration-500"
@@ -343,25 +362,27 @@ const InteractiveCV = () => {
                               )}
                             </ul>
 
-                            {activeTab && (activeTab as string) !== "interests" && item.impact && (
-                              <div className="grid grid-cols-2 gap-4 mt-12">
-                                {item.impact.map(
-                                  (impact: ImpactItem, i: number) => (
-                                    <div
-                                      key={i}
-                                      className="p-4 border border-white/5 bg-white/[0.02] group/impact hover:border-primary/20 transition-colors"
-                                    >
-                                      <p className="text-[10px] text-[#484849] font-display uppercase tracking-widest mb-1 group-hover/impact:text-primary/50 transition-colors">
-                                        {impact.label}
-                                      </p>
-                                      <p className="text-xl font-display font-medium text-white">
-                                        {impact.value}
-                                      </p>
-                                    </div>
-                                  ),
-                                )}
-                              </div>
-                            )}
+                            {activeTab &&
+                              (activeTab as string) !== "interests" &&
+                              item.impact && (
+                                <div className="grid grid-cols-2 gap-4 mt-12">
+                                  {item.impact.map(
+                                    (impact: ImpactItem, i: number) => (
+                                      <div
+                                        key={i}
+                                        className="p-4 border border-white/5 bg-white/[0.02] group/impact hover:border-primary/20 transition-colors"
+                                      >
+                                        <p className="text-[10px] text-[#484849] font-display uppercase tracking-widest mb-1 group-hover/impact:text-primary/50 transition-colors">
+                                          {impact.label}
+                                        </p>
+                                        <p className="text-xl font-display font-medium text-white">
+                                          {impact.value}
+                                        </p>
+                                      </div>
+                                    ),
+                                  )}
+                                </div>
+                              )}
 
                             {item.stack && (
                               <div className="mt-12 pt-8 border-t border-white/5">
@@ -383,38 +404,46 @@ const InteractiveCV = () => {
                           </div>
                         </div>
                       </div>
-                    ),
-                  )
+                    ))
                 ) : activeTab === "interests" ? (
                   <div className="relative pl-8 border-l border-white/10 space-y-12">
-                    {(t("experience.data.interests", { returnObjects: true }) as any[]).slice().reverse().map((item: any, idx: number) => (
-                      <motion.div
-                        key={item.id}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: idx * 0.1 }}
-                        className="relative"
-                      >
-                        {/* Timeline dot */}
-                        <div className="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-background border-2 border-primary" />
+                    {(
+                      t("experience.data.interests", {
+                        returnObjects: true,
+                      }) as any[]
+                    )
+                      .slice()
+                      .reverse()
+                      .map((item: any, idx: number) => (
+                        <motion.div
+                          key={item.id}
+                          initial={{ opacity: 0, x: -20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: idx * 0.1 }}
+                          className="relative"
+                        >
+                          {/* Timeline dot */}
+                          <div className="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-background border-2 border-primary" />
 
-                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                          <span className="text-[10px] font-display uppercase tracking-widest text-[#484849]">
-                            {item.period}
-                          </span>
-                        </div>
+                          <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <span className="text-[10px] font-display uppercase tracking-widest text-[#484849]">
+                              {item.period}
+                            </span>
+                          </div>
 
-                        <h4 className={`text-2xl font-display font-black uppercase tracking-tight mb-2 ${item.isTemperies ? 'text-secondary' : 'text-white'}`}>
-                          {item.company}
-                        </h4>
-                        <p className="text-sm font-display text-primary uppercase tracking-widest mb-4">
-                          {item.role}
-                        </p>
-                      </motion.div>
-                    ))}
+                          <h4
+                            className={`text-2xl font-display font-black uppercase tracking-tight mb-2 ${item.isTemperies ? "text-secondary" : "text-white"}`}
+                          >
+                            {item.company}
+                          </h4>
+                          <p className="text-sm font-display text-primary uppercase tracking-widest mb-4">
+                            {item.role}
+                          </p>
+                        </motion.div>
+                      ))}
                   </div>
                 ) : (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     className="glass p-12 relative overflow-hidden group"
@@ -422,7 +451,7 @@ const InteractiveCV = () => {
                     <div className="absolute top-0 right-0 p-8 opacity-5">
                       <Layout size={120} className="text-white" />
                     </div>
-                    
+
                     <div className="max-w-4xl relative z-10">
                       <span className="text-[10px] text-primary font-display uppercase tracking-[0.4em] mb-8 block">
                         System_Executive_Summary
@@ -431,18 +460,30 @@ const InteractiveCV = () => {
                         {t("experience.summary_title")}
                       </h3>
                       <div className="space-y-8">
-                        {((t("experience.summary_text") as string).split('\n\n')).map((paragraph, i) => (
-                          <p key={i} className="text-[#adaaab] text-lg leading-relaxed font-light">
-                            {paragraph}
-                          </p>
-                        ))}
+                        {(t("experience.summary_text") as string)
+                          .split("\n\n")
+                          .map((paragraph, i) => (
+                            <p
+                              key={i}
+                              className="text-[#adaaab] text-lg leading-relaxed font-light"
+                            >
+                              {paragraph}
+                            </p>
+                          ))}
                       </div>
-                      
+
                       <div className="mt-16 flex items-center gap-6">
                         <div className="flex -space-x-2">
                           {[1, 2, 3, 4].map((i) => (
-                            <div key={i} className="w-8 h-8 rounded-full border-2 border-background bg-zinc-800 flex items-center justify-center text-[10px] text-white font-bold">
-                              {i === 4 ? "+" : <div className="w-1 h-1 bg-primary rounded-full" />}
+                            <div
+                              key={i}
+                              className="w-8 h-8 rounded-full border-2 border-background bg-zinc-800 flex items-center justify-center text-[10px] text-white font-bold"
+                            >
+                              {i === 4 ? (
+                                "+"
+                              ) : (
+                                <div className="w-1 h-1 bg-primary rounded-full" />
+                              )}
                             </div>
                           ))}
                         </div>

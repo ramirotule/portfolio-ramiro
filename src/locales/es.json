@@ -13,7 +13,7 @@
     "home": "Inicio",
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "interests": "Intereses e IA",
+    "interests": "Intereses & IA",
     "experience": "Experiencia",
     "contact": "Contacto",
     "download_cv": "Descargar CV (PDF)"
@@ -167,7 +167,13 @@
     "english_level": "Inglés B2 (Upper Intermediate)",
     "spanish_level": "Español (Nativo)",
     "tools_title": "Herramientas de Workflow",
-    "methodology_title": "Sistemas de Diseño y Metodología",
+    "methodology_title": "Metodologías Ágiles de Trabajo",
+    "methodologies": [
+      "Daily 15 min todos los días",
+      "Sprints Planning",
+      "Sprints Retrospective",
+      "Sprints Refinement"
+    ],
     "tabs": {
       "us": "Experiencia USA",
       "own": "Proyectos Propios",
