@@ -13,7 +13,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { PERSONAL_DATA } from "../constants";
 
-const profilePic = "/assets/profile.jpeg";
+const profilePic = "/assets/profile.png";
 const cvPdf = "/assets/cv.pdf";
 
 interface ImpactItem {
