@@ -16,7 +16,22 @@
     "interests": "Interests & AI",
     "experience": "Experience",
     "contact": "Contact",
-    "download_cv": "Download CV"
+    "download_cv": "Download Resume PDF"
+  },
+  "command": {
+    "placeholder": "Type a command or search...",
+    "results": "Search Results",
+    "no_results": "No results found for \"{{query}}\"",
+    "navigation": "Navigation",
+    "actions": "Actions",
+    "type_lang": "Language",
+    "type_project": "Project Portfolio",
+    "type_exp_us": "Experience (USA)",
+    "type_exp_own": "Experience (Own Projects)",
+    "type_exp_gov": "Experience (Gov)",
+    "type_exp_detail": "Experience (Project Details)",
+    "lang_en_desc": "Professional proficiency in English (B2 level). Experience in US-based projects and daily engineering collaboration.",
+    "lang_es_desc": "Native speaker from Argentina with high communication skills."
   },
   "about": {
     "specialist": "Specialist",

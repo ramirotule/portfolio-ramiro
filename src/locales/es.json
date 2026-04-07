@@ -16,7 +16,22 @@
     "interests": "Intereses e IA",
     "experience": "Experiencia",
     "contact": "Contacto",
-    "download_cv": "Descargar CV"
+    "download_cv": "Descargar CV (PDF)"
+  },
+  "command": {
+    "placeholder": "Escribe un comando o busca...",
+    "results": "Resultados de búsqueda",
+    "no_results": "No se encontraron resultados para \"{{query}}\"",
+    "navigation": "Navegación",
+    "actions": "Acciones",
+    "type_lang": "Idioma",
+    "type_project": "Portfolio de Proyectos",
+    "type_exp_us": "Experiencia (USA)",
+    "type_exp_own": "Proyectos Propios",
+    "type_exp_gov": "Experiencia (Gov)",
+    "type_exp_detail": "Detalles de Proyecto",
+    "lang_en_desc": "Competencia profesional en inglés (nivel B2). Experiencia en proyectos basados en EE. UU. y colaboración diaria en ingeniería.",
+    "lang_es_desc": "Hablante nativo de Argentina con altas habilidades de comunicación."
   },
   "about": {
     "specialist": "Especialista",

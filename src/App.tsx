@@ -8,6 +8,7 @@ import BentoGrid from "./components/BentoGrid";
 import InteractiveCV from "./components/InteractiveCV";
 import Mission from "./components/Mission";
 import Contact from "./components/Contact";
+import { PROJECTS } from "./constants";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Search,
@@ -59,6 +60,7 @@ function App() {
   const { t } = useTranslation();
   const [isCommandOpen, setIsCommandOpen] = useState(false);
   const [isMapOpen, setIsMapOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -109,7 +111,9 @@ function App() {
                 <Search size={20} className="text-primary" />
                 <input
                   autoFocus
-                  placeholder="Type a command or search..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  placeholder={t('command.placeholder')}
                   className="w-full bg-transparent border-none outline-none text-lg font-display uppercase tracking-widest text-white placeholder:text-[#484849]"
                 />
                 <div className="flex items-center gap-1 text-[10px] font-display text-[#484849]">
@@ -120,57 +124,209 @@ function App() {
               </div>
 
               <div className="p-4 max-h-[60vh] overflow-y-auto">
-                <div className="mb-6 px-4 py-2">
-                  <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
-                    Navigation
-                  </span>
-                  {[
-                    { label: "Home", path: "/" },
-                    { label: "About", path: "/about" },
-                    { label: "Projects", path: "/projects" },
-                    { label: "Experience", path: "/experience" },
-                    { label: "Interests & AI", path: "/interests" },
-                    { label: "Contact", path: "/contact" },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      onClick={() => {
-                        setIsCommandOpen(false);
-                        if (item.path.startsWith("#")) {
-                          document
-                            .querySelector(item.path)
-                            ?.scrollIntoView({ behavior: "smooth" });
-                        } else {
-                          navigate(item.path);
-                        }
-                      }}
-                      className="flex items-center justify-between p-3 hover:bg-primary/10 group transition-colors cursor-pointer"
-                    >
-                      <span className="font-display uppercase tracking-widest text-white group-hover:text-primary transition-colors">
-                        {item.label}
-                      </span>
-                      <Command size={14} className="text-[#484849]" />
-                    </div>
-                  ))}
-                </div>
+                {searchTerm.trim() ? (
+                  <div className="px-4 py-2">
+                    <span className="text-[10px] font-display uppercase tracking-widest text-primary mb-4 block">
+                      {t('command.results')}
+                    </span>
+                    {(() => {
+                      const expUs = (t("experience.data.us", { returnObjects: true }) as any[]) || [];
+                      const expOwn = (t("experience.data.own", { returnObjects: true }) as any[]) || [];
+                      const expGov = (t("experience.data.government", { returnObjects: true }) as any[]) || [];
 
-                <div className="px-4 py-2">
-                  <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
-                    Actions
-                  </span>
-                  <a 
-                    href={cvPdf}
-                    download="Ramiro_Toulemonde_CV.pdf"
-                    className="flex items-center justify-between p-3 hover:bg-secondary/10 group transition-colors cursor-pointer"
-                  >
-                    <span className="font-display uppercase tracking-widest text-white group-hover:text-secondary transition-colors">
-                      Download Resume PDF
-                    </span>
-                    <span className="text-[9px] font-display uppercase tracking-widest text-[#484849]">
-                      CV.pdf
-                    </span>
-                  </a>
-                </div>
+                      const results = [
+                        // Dynamic Languages
+                        {
+                          id: "lang-en",
+                          title: t('experience.english_level'),
+                          desc: t('command.lang_en_desc'),
+                          path: "/experience",
+                          type: t('command.type_lang')
+                        },
+                        {
+                          id: "lang-es",
+                          title: t('experience.spanish_level'),
+                          desc: t('command.lang_es_desc'),
+                          path: "/about",
+                          type: t('command.type_lang')
+                        },
+                        // Projects
+                        ...PROJECTS.map(p => ({
+                          id: `proj-${p.id}`,
+                          title: p.title,
+                          desc: (t(`projects.list.${p.id}.content`) || p.description) + " " + (p.tech ? p.tech.join(" ") : ""),
+                          tech: p.tech,
+                          path: "/projects",
+                          type: t('command.type_project')
+                        })),
+                        // Experience USA (and its inner projects)
+                        ...expUs.flatMap(e => {
+                          const mainExp = {
+                            id: `exp-us-${e.id}`,
+                            title: e.company,
+                            desc: e.role + " " + e.description.join(" ") + " " + (e.stack ? e.stack.join(", ") : ""),
+                            path: "/experience",
+                            type: t('command.type_exp_us')
+                          };
+                          const innerProjs = Object.entries(e.projects || {}).map(([key, p]: [string, any]) => ({
+                            id: `exp-us-proj-${key}`,
+                            title: `${p.title} (${e.company})`,
+                            desc: p.content + " " + (p.stack ? p.stack.join(", ") : ""),
+                            path: "/experience",
+                            type: t('command.type_exp_detail')
+                          }));
+                          return [mainExp, ...innerProjs];
+                        }),
+                        // Experience Own Projects (and its inner projects)
+                        ...expOwn.flatMap(e => {
+                          const mainExp = {
+                            id: `exp-own-${e.id}`,
+                            title: e.company,
+                            desc: e.role + " " + (e.description ? e.description.join(" ") : ""),
+                            path: "/experience",
+                            type: t('command.type_exp_own')
+                          };
+                          const innerProjs = Object.entries(e.projects || {}).map(([key, p]: [string, any]) => ({
+                            id: `exp-own-proj-${key}`,
+                            title: `${p.title} (${e.company})`,
+                            desc: p.content + " " + (p.stack ? p.stack.join(", ") : ""),
+                            path: "/experience",
+                            type: t('command.type_exp_detail')
+                          }));
+                          return [mainExp, ...innerProjs];
+                        }),
+                        // Experience Government
+                        ...expGov.map(e => ({
+                          id: `exp-gov-${e.id}`,
+                          title: e.company,
+                          desc: e.role + " " + e.description.join(" ") + " " + (e.stack ? e.stack.join(", ") : ""),
+                          path: "/experience",
+                          type: t('command.type_exp_gov')
+                        })),
+                        {
+                          id: "about-profile",
+                          title: t('about.profile_title'),
+                          desc: t("about.profile_html"),
+                          path: "/about",
+                          type: t('nav.about')
+                        },
+                        {
+                          id: "action-cv",
+                          title: t('nav.download_cv'),
+                          desc: "Ramiro Toulemonde CV - Resume - Curriculum - PDF Download",
+                          path: "download",
+                          type: t('command.actions'),
+                          isDownload: true
+                        }
+                      ].filter(item => {
+                        const query = searchTerm.toLowerCase().trim();
+                        return (
+                          item.title.toLowerCase().includes(query) ||
+                          item.desc.toLowerCase().includes(query) ||
+                          (item as any).tech?.some((t: string) => t.toLowerCase().includes(query))
+                        );
+                      });
+
+                      if (results.length === 0) {
+                        return (
+                          <div className="py-8 text-center">
+                            <p className="text-[#484849] font-display uppercase tracking-widest text-xs">
+                              {t('command.no_results', { query: searchTerm })}
+                            </p>
+                          </div>
+                        );
+                      }
+
+                      return results.map((result) => (
+                        <div
+                          key={result.id}
+                          onClick={() => {
+                            if ((result as any).isDownload) {
+                              const link = document.createElement('a');
+                              link.href = cvPdf;
+                              link.download = "Ramiro_Toulemonde_CV.pdf";
+                              link.click();
+                            } else {
+                              navigate(result.path);
+                            }
+                            setIsCommandOpen(false);
+                            setSearchTerm("");
+                          }}
+                          className="p-4 mb-2 hover:bg-white/5 border border-white/0 hover:border-white/5 group transition-all cursor-pointer"
+                        >
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="font-display uppercase tracking-widest text-white group-hover:text-primary transition-colors">
+                              {result.title}
+                            </h4>
+                            <span className="text-[10px] font-display uppercase tracking-widest text-primary/40">
+                              {result.type}
+                            </span>
+                          </div>
+                          <p className="text-[#adaaab] text-[10px] leading-tight line-clamp-2 mb-2">
+                            {result.desc.replace(/<\/?[^>]+(>|$)/g, "")}
+                          </p>
+                          <div className="flex items-center gap-2 text-[8px] font-display uppercase tracking-widest text-[#484849]">
+                            <MapPin size={8} /> {result.path}
+                          </div>
+                        </div>
+                      ));
+                    })()}
+                  </div>
+                ) : (
+                  <>
+                    <div className="mb-6 px-4 py-2">
+                      <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
+                        {t('command.navigation')}
+                      </span>
+                      {[
+                        { label: t('nav.home'), path: "/" },
+                        { label: t('nav.about'), path: "/about" },
+                        { label: t('nav.projects'), path: "/projects" },
+                        { label: t('nav.experience'), path: "/experience" },
+                        { label: t('nav.interests'), path: "/interests" },
+                        { label: t('nav.contact'), path: "/contact" },
+                      ].map((item) => (
+                        <div
+                          key={item.label}
+                          onClick={() => {
+                            setIsCommandOpen(false);
+                            if (item.path.startsWith("#")) {
+                              document
+                                .querySelector(item.path)
+                                ?.scrollIntoView({ behavior: "smooth" });
+                            } else {
+                              navigate(item.path);
+                            }
+                          }}
+                          className="flex items-center justify-between p-3 hover:bg-primary/10 group transition-colors cursor-pointer"
+                        >
+                          <span className="font-display uppercase tracking-widest text-white group-hover:text-primary transition-colors">
+                            {item.label}
+                          </span>
+                          <Command size={14} className="text-[#484849]" />
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="px-4 py-2">
+                      <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
+                        {t('command.actions')}
+                      </span>
+                      <a 
+                        href={cvPdf}
+                        download="Ramiro_Toulemonde_CV.pdf"
+                        className="flex items-center justify-between p-3 hover:bg-secondary/10 group transition-colors cursor-pointer"
+                      >
+                        <span className="font-display uppercase tracking-widest text-white group-hover:text-secondary transition-colors">
+                          {t('nav.download_cv')}
+                        </span>
+                        <span className="text-[9px] font-display uppercase tracking-widest text-[#484849]">
+                          CV.pdf
+                        </span>
+                      </a>
+                    </div>
+                  </>
+                )}
               </div>
             </motion.div>
           </motion.div>
