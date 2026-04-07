@@ -21,7 +21,7 @@ import {
   Zap,
   X,
 } from "lucide-react";
-const cvPdf = "/assets/cv.pdf";
+const cvPdf = "/assets/Resume-Frontend-Ramiro_Toulemonde.pdf";
 
 const GithubIcon = ({ size }: { size: number }) => (
   <svg
@@ -241,26 +241,26 @@ function App() {
                         })),
                         {
                           id: "about-profile",
-                          title: t('about.profile_title'),
+                          title: t("about.profile_title"),
                           desc: t("about.profile_html"),
                           path: "/about",
-                          type: t('nav.about')
+                          type: t("nav.about"),
                         },
                         // Main Tech Stack
-                        ...PERSONAL_DATA.stack.map(s => ({
+                        ...PERSONAL_DATA.stack.map((s) => ({
                           id: `skill-${s}`,
                           title: s,
                           desc: `Technology and skill proficiency: ${s}`,
                           path: "/experience",
-                          type: "Tech Stack"
+                          type: "Tech Stack",
                         })),
                         // Workflow Tools
-                        ...PERSONAL_DATA.workflowTools.map(w => ({
+                        ...PERSONAL_DATA.workflowTools.map((w) => ({
                           id: `tool-${w}`,
                           title: w,
                           desc: `Professional workflow tool and methodology: ${w}`,
                           path: "/experience",
-                          type: "Workflow Tools"
+                          type: "Workflow Tools",
                         })),
                         {
                           id: "action-cv",
@@ -298,7 +298,8 @@ function App() {
                             if ((result as any).isDownload) {
                               const link = document.createElement("a");
                               link.href = cvPdf;
-                              link.download = "Ramiro_Toulemonde_CV.pdf";
+                              link.download =
+                                "Resume-Frontend-Ramiro_Toulemonde.pdf";
                               link.click();
                             } else {
                               navigate(result.path);
@@ -368,7 +369,7 @@ function App() {
                       </span>
                       <a
                         href={cvPdf}
-                        download="Ramiro_Toulemonde_CV.pdf"
+                        download="Resume-Frontend-Ramiro_Toulemonde.pdf"
                         className="flex items-center justify-between p-3 hover:bg-secondary/10 group transition-colors cursor-pointer"
                       >
                         <span className="font-display uppercase tracking-widest text-white group-hover:text-secondary transition-colors">

@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import { PERSONAL_DATA } from "../constants";
 
 const profilePic = "/assets/profile.png";
-const cvPdf = "/assets/cv.pdf";
+const cvPdf = "/assets/Resume-Frontend-Ramiro_Toulemonde.pdf";
 
 interface ImpactItem {
   label: string;
@@ -192,7 +192,7 @@ const InteractiveCV = () => {
 
           <a
             href={cvPdf}
-            download="Ramiro_Toulemonde_CV.pdf"
+            download="Resume-Frontend-Ramiro_Toulemonde.pdf"
             className="w-full py-4 border border-primary/20 text-white font-display text-[10px] uppercase tracking-[0.3em] hover:bg-primary hover:text-background transition-all flex items-center justify-center gap-3 cursor-pointer"
           >
             <Download size={14} />
