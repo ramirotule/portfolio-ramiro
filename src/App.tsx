@@ -20,6 +20,7 @@ import {
   Zap,
   X,
 } from "lucide-react";
+import cvPdf from './assets/cv.pdf';
 
 const GithubIcon = ({ size }: { size: number }) => (
   <svg
@@ -62,9 +63,9 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Scroll to top on route change
+    // Only scroll to top when the main category changes
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+  }, [location.pathname.split("/")[1]]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -157,14 +158,18 @@ function App() {
                   <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
                     Actions
                   </span>
-                  <div className="flex items-center justify-between p-3 hover:bg-secondary/10 group transition-colors cursor-pointer">
+                  <a 
+                    href={cvPdf}
+                    download="Ramiro_Toulemonde_CV.pdf"
+                    className="flex items-center justify-between p-3 hover:bg-secondary/10 group transition-colors cursor-pointer"
+                  >
                     <span className="font-display uppercase tracking-widest text-white group-hover:text-secondary transition-colors">
                       Download Resume PDF
                     </span>
                     <span className="text-[9px] font-display uppercase tracking-widest text-[#484849]">
                       CV.pdf
                     </span>
-                  </div>
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -173,10 +178,7 @@ function App() {
       </AnimatePresence>
 
       {/* Main Content Sections */}
-      {/* Main Content Sections */}
       <div className="pt-0">
-        {" "}
-        {/* Kept relative/pt handled by sections */}
         <Routes>
           <Route
             path="/"
@@ -194,7 +196,6 @@ function App() {
             path="/interests"
             element={
               <>
-                {/* Interests & Learning Section */}
                 <section
                   id="interests"
                   className="py-24 px-6 max-w-7xl mx-auto"

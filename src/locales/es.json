@@ -5,7 +5,7 @@
     "location": "La Pampa, Argentina"
   },
   "hero": {
-    "title": "Analista de Sistemas desde Argentina para el Mundo",
+    "title": "Analista de Sistemas de Argentina para el Mundo",
     "subtitle": "Arquitecto Técnico diseñando productos digitales de alto rendimiento.",
     "codeComment": "La excelencia no es un acto, es un hábito"
   },
@@ -23,86 +23,92 @@
     "evolution": "Evolución",
     "origin": "Origen y",
     "frontend": "Frontend",
-    "profile_html": "Soy un Especialista Frontend dedicado con más de <span class=\"text-white\">6 años de experiencia</span> creando aplicaciones web y móviles de alto rendimiento. Mi experiencia radica en el ecosistema <span class=\"text-primary\"> React JS & React Native</span>, donde aprovecho <span class=\"text-secondary\">TypeScript</span> para construir arquitecturas robustas y type-safe que resisten el paso del tiempo.",
+    "profile_html": "Soy un Especialista Frontend dedicado con más de <span class=\"text-white\">6 años de experiencia</span> creando aplicaciones web y móviles de alto rendimiento. Mi experiencia radica en el ecosistema <span class=\"text-primary\">React JS & React Native</span>, donde aprovecho <span class=\"text-secondary\">TypeScript</span> para construir arquitecturas robustas y type-safe que resisten el paso del tiempo.",
     "qa_title": "Filosofía Técnica y",
     "qa_mindset": "Mentalidad QA",
-    "qa_html": "Lo que distingue mi enfoque es una mentalidad de priorizar la calidad, formada por mi experiencia en <span class=\"text-white\">Aseguramiento de Calidad (QA)</span>. Habiendo pasado tiempo en un rol de QA, veo el código a través de una lente muy crítica, anticipando casos extremos y fallas potenciales mucho antes de que lleguen a producción. Soy un firme defensor de:",
+    "qa_html": "Lo que distingue mi enfoque es una mentalidad de \"calidad primero\" formada por mi experiencia en <span class=\"text-white\">Aseguramiento de Calidad (QA)</span>. Habiendo pasado tiempo en un rol de QA, veo el código a través de una lente muy crítica, anticipando casos de borde y posibles fallas mucho antes de que lleguen a producción. Soy un firme defensor de:",
     "qa_points": [
       "<span class=\"text-primary font-bold\">Confiabilidad Basada en Pruebas:</span> Implementación de pruebas unitarias exhaustivas con alta cobertura para garantizar que el código no solo sea funcional, sino <span class=\"text-white\">mantenible</span> y <span class=\"text-white\">resiliente</span>.",
       "<span class=\"text-primary font-bold\">Arquitectura Escalable:</span> Escribir código modular y limpio que simplifique el proceso de depuración y facilite el crecimiento a largo plazo.",
       "<span class=\"text-primary font-bold\">Diseño Centrado en el Usuario:</span> Acortar la brecha entre la excelencia técnica y las experiencias de usuario fluidas, asegurando que cada interfaz sea tan intuitiva como eficiente."
     ],
     "soft_skills_title": "Habilidades Blandas y Proactividad",
-    "soft_skills_html": "Me considero un profesional proactivo con excelentes habilidades blandas, siempre con ganas de aprender y listo para asumir nuevos desafíos. Prospero en entornos colaborativos donde puedo contribuir al ciclo completo de desarrollo, desde los conceptos iniciales de UI/UX hasta la implementación final y validación de calidad.",
-    "journey_p1_html": "Mi historia en la tecnología comenzó en <span class=\"text-white\">2005</span> como empleado estatal, donde desarrollé sistemas administrativos utilizando <span class=\"text-white\">Visual FoxPro</span>. Esta experiencia inicial me dio una base sólida en lógica y gestión de bases de datos.",
-    "ent_title": "Emprendedurismo y Crecimiento",
+    "soft_skills_html": "Me considero un profesional proactivo con excelentes habilidades blandas, siempre con ganas de aprender y listo para asumir nuevos desafíos. Prospero en entornos colaborativos donde puedo contribuir al ciclo completo de desarrollo, desde los conceptos iniciales de UI/UX hasta el despliegue final y la validación de calidad.",
+    "journey_p1_html": "Mi historia en la tecnología comenzó en <span class=\"text-white\">2005</span> como empleado estatal, en A.P.A (Administración Provincial del Agua) donde desarrollé sistemas administrativos utilizando <span class=\"text-white\">Visual FoxPro</span>. Esta experiencia inicial me dio una base sólida en lógica y gestión de bases de datos.",
+    "ent_title": "Emprendimiento y Crecimiento",
     "ent_years": "(2008 – 2021)",
-    "ent_html": "En 2008, canalicé mis conocimientos técnicos en mi propio negocio. Durante más de una década, administré una tienda minorista de servicios informáticos y hardware. Este período fue crucial para desarrollar mi mentalidad proactiva y mis habilidades blandas, ya que era directamente responsable de la resolución de problemas técnicos y el éxito del cliente.",
+    "ent_html": "En 2008, canalicé mis conocimientos técnicos en mi propio negocio. Durante más de una década, administré una tienda minorista de servicios informáticos y hardware. Este período fue crucial para desarrollar mi mentalidad proactiva y habilidades blandas, ya que era directamente responsable de la resolución de problemas técnicos y el éxito del cliente.",
     "dt_title": "La Transformación Digital",
-    "dt_years": "(2019 – Presente)",
-    "dt_p1_html": "En 2019, fui invitado a regresar a mi lugar de trabajo original en el sector público para liderar una transición crítica. Con una perspectiva más madura, propuse y ejecuté la migración de sistemas informáticos heredados a arquitecturas web modernas.",
+    "dt_years": "(2019 – 2021)",
+    "dt_p1_html": "En 2019, fui invitado a regresar a mi lugar de trabajo original en el sector público (A.P.A) para liderar una transición crítica. Con una perspectiva más madura, propuse y ejecuté la migración de sistemas informáticos heredados a arquitecturas web modernas.",
     "dt_p2_html": "Usando <span class=\"text-primary\">React</span>, <span class=\"text-primary\">Firebase</span> y <span class=\"text-primary\">Bootstrap</span>, migré exitosamente módulos administrativos clave, incluyendo:",
     "dt_points": [
-      "Sistemas de Adquisiciones y Compras",
+      "Sistemas de Licitación y Compras",
       "Gestión de Inventario y Almacenes",
       "Recursos Humanos y Nóminas"
     ],
-    "dt_p3_html": "Esta experiencia fue un punto de inflexión, que me permitió dominar los flujos de trabajo de frontend modernos antes de la transición completa al sector privado en <a href=\"https://www.temperies.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white hover:text-primary transition-colors underline underline-offset-4 decoration-white/30 hover:decoration-primary/60\">Temperies</a>.",
+    "dt_p3_html": "Esta experiencia fue un punto de inflexión, permitiéndome dominar los flujos de trabajo de frontend modernos antes de la transición completa al sector privado en <a href=\"https://www.temperies.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white hover:text-primary transition-colors underline underline-offset-4 decoration-white/30 hover:decoration-primary/60\">Temperies</a> en 2022 hasta la actualidad.",
     "profile_title": "Perfil Profesional",
-    "journey_title": "Mi Historia Profesional",
+    "journey_title": "Mi Trayectoria Profesional",
     "beyond_coding": "MÁS ALLÁ DEL CÓDIGO (Mi Proyecto Más Importante)",
     "drives_me_highlight": "Me Motiva",
     "drives_me_title": "Qué",
     "drives_me_intro": "Cuando no estoy en mi escritorio, generalmente me enfoco en las cosas que me mantienen inspirado y con los pies en la tierra:",
     "family_title": "La Familia Primero:",
-    "family_desc": "Llevo 14 años felizmente casado y soy un orgulloso padre de dos niños: una hija de 13 y un hijo de 10 años. Son mi mayor motivación.",
+    "family_desc": "Llevo 14 años felizmente casado y soy el orgulloso padre de dos niños: una hija de 13 años y un hijo de 10 años. Son mi mayor motivación.",
     "cars_title": "Restaurar Autos Clásicos:",
     "cars_desc": "Hay algo increíblemente gratificante en devolverle la vida a un vehículo antiguo. ¡Es el mismo deseo de 'resolver problemas' que tengo al programar, pero con mucha más grasa!",
     "music_title": "Música:",
     "music_desc": "Me encanta tocar el piano y la guitarra. Es mi manera favorita de apagar el cerebro lógico y conectar con algo más creativo.",
     "travel_title": "Viajar:",
-    "travel_desc": "Explorar lugares nuevos con mi familia es nuestra manera favorita de crear recuerdos invaluables juntos.",
+    "travel_desc": "Explorar lugares nuevos con mi familia es nuestra manera favorita de crear recuerdos duraderos juntos.",
     "hobbies": {
       "music": "Tocar Instrumentos (Piano y Guitarra)",
       "cars": "Restaurar autos antiguos",
       "family": "Viajar con mi familia"
-    }
+    },
+    "favorite_quote": "¡Lo único imposible es aquello que no intentas!",
+    "favorite_quote_author": ""
   },
   "projects": {
-    "section_title_prefix": "",
-    "section_title_primary": "Portfolio",
-    "section_title_suffix": "Arquitectónico",
+    "section_title_prefix": "Portfolio",
+    "section_title_primary": "Arquitectónico",
+    "section_title_suffix": "",
     "section_subtitle": "PROYECTOS SELECCIONADOS",
-    "description": "Transformando sectores a través del código. Desde el sector automotriz, inmobiliario y el ecommerce, desarrollo arquitecturas de interfaz sólidas que impulsan el crecimiento urbano y digital. Me guío por la precisión, la escalabilidad y la lógica.",
+    "description": "Transformando industrias a través del código. Desde los sectores automotriz, inmobiliario y de comercio electrónico, desarrollo arquitecturas de interfaz robustas que impulsan el crecimiento urbano y digital. Me guio por la precisión, la escalabilidad y la lógica.",
     "list": {
-      "saas": {
-        "title": "STOCK AUTOS (SaaS)",
-        "content": "Sistema de gestión automotriz con automatización n8n y backend Supabase."
+      "stockautos": {
+        "title": "STOCKAUTOS",
+        "content": "Sistema de gestión automotriz con automatización mediante n8n. Permite la publicación masiva o individual de vehículos de forma automática en múltiples plataformas, optimizando el alcance de concesionarias. Backend robusto sobre Supabase."
       },
       "alkila": {
         "title": "Alkila",
-        "content": "Plataforma inmobiliaria con impacto local en Santa Rosa."
+        "content": "Plataforma inmobiliaria enfocada en el mercado de Santa Rosa. Desarrollada con React, Tailwind y Supabase, ofrece un sistema avanzado de filtros y búsqueda para conectar inquilinos con propiedades locales de forma eficiente."
       },
-      "informatica": {
+      "raminformatica": {
         "title": "RAM Informática",
-        "content": "Integración de motor de precios en Python + WhatsApp API."
+        "content": "E-commerce y dashboard administrativo integrado. Utiliza React y Python para automatizar la actualización de precios: un script procesa mensajes de WhatsApp Business de proveedores y recalcula márgenes de ganancia en tiempo real sobre Supabase."
       },
       "detakito": {
-        "title": "deTaquito — Portal de Dueños",
-        "content": "Demostración de rendimiento en React Native con Fabric Architecture."
+        "title": "deTaquito",
+        "content": "Showcase de rendimiento extremo en React Native utilizando Fabric Architecture para una experiencia de usuario fluida y nativa."
+      },
+      "controlgastos": {
+        "title": "ControlGastos",
+        "content": "Web App 100% responsiva (React + Tailwind) para gestión financiera personal. Incluye control de gastos fijos, variables, tarjetas de crédito y préstamos, con reportes gráficos detallados sobre el flujo de caja. Backend en Supabase."
       }
     }
   },
   "interests_section": {
     "title_prefix": "Aprendizaje",
     "title_highlight": "Continuo",
-    "subtitle": "Expandiendo mi stack tecnológico y explorando nuevas fronteras.",
+    "subtitle": "Expandiendo mi stack y explorando nuevas fronteras.",
     "python_title": "Python e IA",
-    "python_desc": "Aprendiendo activamente Python orientado a Inteligencia artificial. Estoy explorando los fundamentos del aprendizaje automático, redes neuronales y cómo integrar IA directamente en proyectos nuevos y existentes.",
+    "python_desc": "Aprendiendo activamente Python orientado a la Inteligencia Artificial. Estoy explorando los fundamentos del aprendizaje automático, redes neuronales y cómo integrar la IA directamente en proyectos nuevos y existentes.",
     "nextjs_title": "Arquitectura Next.js",
     "nextjs_desc": "Actualmente profundizando en Next.js 14/15, App Router y React Server Components. Construyendo implementaciones full-stack para maximizar el SEO y minimizar el tiempo de interacción para los usuarios finales.",
-    "ai_title": "Workflows con IA",
-    "ai_desc": "Involucrándome más con el aprendizaje por IA, entendiendo cómo razonan los LLMs y utilizando agentes autónomos para acelerar los ciclos de desarrollo y la creación de sistemas de diseño."
+    "ai_title": "Workflows de IA",
+    "ai_desc": "Involucrándome más con el aprendizaje por IA, entendiendo cómo razonan los LLMs y utilizando agentes autónomos para acelerar los ciclos de desarrollo y los sistemas de diseño."
   },
   "mission": {
     "protocol": "PROTOCOLO OPERATIVO",
@@ -113,13 +119,13 @@
     "proactivity_title": "Proactividad",
     "proactivity_desc": "No solo escribo código; anticipo necesidades, propongo mejoras arquitectónicas reales y actúo antes de que los cuellos de botella impacten el producto.",
     "responsibility_title": "Responsabilidad",
-    "responsibility_desc": "Ownership total de las métricas. Desde el primer commit hasta el despliegue a producción, el éxito del proyecto es mi prioridad absoluta.",
+    "responsibility_desc": "Propiedad total de las métricas. Desde el primer commit hasta el despliegue en producción, el éxito del proyecto es mi absoluta prioridad.",
     "result": "RESULTADO:",
-    "success": "Éxito Asegurado"
+    "success": "Éxito Garantizado"
   },
   "contact": {
     "title": "Iniciar Protocolo",
-    "subtitle": "Contacto",
+    "subtitle": "Póngase en Contacto",
     "name_label": "Identificación (Nombre)",
     "name_placeholder": "Juan Pérez",
     "email_label": "Canal de Com (Email)",
@@ -129,9 +135,9 @@
     "submit": "Enviar Transmisión",
     "submitting": "Transmitiendo...",
     "success": "Mensaje Entregado con Éxito",
-    "invalid_email": "Por favor ingresa un canal (email) válido.",
+    "invalid_email": "Por favor, ingrese un canal de comunicación válido (email)",
     "sidebar_title": "Canales Directos",
-    "sidebar_desc": "¿Prefieres protocolos estándar? Contáctame directamente por aquí."
+    "sidebar_desc": "¿Prefiere protocolos estándar? Contácteme directamente a través de estos canales."
   },
   "experience": {
     "title": "Experiencia",
@@ -140,26 +146,90 @@
     "coreImpact": "Impacto Core",
     "dataFiltering": "Filtrado de Datos",
     "downloadPdf": "Descargar PDF",
+    "moreInfo": "Más Información",
+    "close": "Cerrar",
+    "languages_title": "Idiomas",
+    "english_level": "Inglés B2 (Upper Intermediate)",
+    "spanish_level": "Español (Nativo)",
+    "tools_title": "Herramientas de Workflow",
+    "methodology_title": "Sistemas de Diseño y Metodología",
     "tabs": {
-      "us": "Experiencia US",
+      "us": "Experiencia USA",
       "own": "Proyectos Propios",
       "government": "Proyectos Gobierno",
-      "interests": "Intereses e IA"
+      "interests": "Timeline de Experiencia"
     },
+    "summary_title": "Trayectoria Profesional",
+    "summary_text": "Cuento con 6 años de experiencia como Desarrollador Frontend en el sector privado, enfocándome en crear soluciones escalables y eficientes. Durante mi paso por Fasterway, lideré proyectos críticos que impactaron directamente en la experiencia del usuario y la robustez técnica de la plataforma.\n\nUno de mis mayores logros fue la implementación de Push Notifications desde cero, diseñando toda la arquitectura de mensajería. También gestioné la transición tecnológica más importante de la app: la migración de React Native 0.73 a 0.84. Esto implicó adoptar la arquitectura Fabric, lo que requirió un refactor profundo y la actualización de múltiples librerías para alinearse con la nueva filosofía de renderizado de la plataforma.\n\nEn cuanto a observabilidad, integré Google Analytics y Microsoft Clarity tanto en Mobile como en Desktop, permitiendo al equipo tomar decisiones basadas en datos reales. Además, realicé un refactor integral del sitio web principal, migrando componentes de clase con más de 6 años de antigüedad a componentes funcionales con Hooks, mejorando drásticamente la mantenibilidad.\n\nFinalmente, tengo experiencia sólida gestionando el ciclo de vida de las apps, desde el deploy en ambientes de DEV, QA y PROD hasta la publicación en App Store y Play Store. Para optimizar esto, propuse e implementé una metodología de branching ordenada, garantizando entregas estables a QA y minimizando el riesgo de errores en los builds de producción.",
     "data": {
       "us": [
         {
           "id": "temperies",
           "company": "TEMPERIES",
           "role": "Desarrollador Frontend Senior",
-          "period": "03/2022 — PRESENTE // REMOTO",
+          "period": "03/2022 — ACTUALIDAD",
           "status": "COMPROMISO ACTUAL",
           "description": [
-            "FasterWay (2024 - Presente): Colaborando en el desarrollo de una aplicación web y móvil de primer nivel sobre fitness y nutrición, enfocada en features de alto tráfico.",
-            "Arculix & SecureAuth: Lideré la modernización de la UI migrando BlueprintJS a Material UI y ejecuté un rebranding completo para flujos de gestión de seguridad de usuarios.",
-            "UMOV (Chile): Desarrollé un back-office HealthTech especializado para administrar pacientes.",
-            "LinkLabs (USA): Implementé módulos de UI complejos basados en Figma de alta fidelidad, asegurando una experiencia perfecta."
+            "FasterWay (Enero 2024 - Actualidad): Plataforma Fitness & Nutrition (Mobile & Web).",
+            "Arculix (Julio 2022 - Diciembre 2023): Seguridad, modos de acceso y permisos.",
+            "SecureAuth (Mayo 2022 - Julio 2022): Rebranding e interfaz de aplicación.",
+            "UMOV (Abril 2022 - Mayo 2022): Back-office clínico para interacción de usuarios.",
+            "LinkLabs (Marzo 2022 - Abril 2022): Sistema de ubicación en tiempo real."
           ],
+          "projects": {
+            "fasterway": {
+              "title": "Faster Way to Fat Loss",
+              "content": "Transformación integral de la plataforma líder en fitness y nutrición. En Web, desarrollé un panel de control para coaches usando React JS y Material UI. En Mobile, trabajé con React Native (v0.84), aplicando Fabric Architecture para alto rendimiento. Integré utilidades de IA para seguimiento de comidas mediante reconocimiento de voz e imagen, además de un chatbot personalizado. Manejo de estado con MobX State Tree y traducción con i18next.",
+              "stack": [
+                "React Native 0.84",
+                "React JS",
+                "MobX State Tree",
+                "Styled Components",
+                "i18next",
+                "Material UI",
+                "Funciones IA"
+              ]
+            },
+            "arculix": {
+              "title": "Arculix (USA)",
+              "content": "Proyecto iniciado desde cero para la gestión de problemas de seguridad de usuarios, modos de acceso y permisos. Creación de nuevos componentes personalizados basados en BlueprintJS según requerimientos específicos del cliente.",
+              "stack": [
+                "React JS",
+                "Redux Toolkit",
+                "Storybook",
+                "Blueprint JS",
+                "GraphQL",
+                "Jira"
+              ]
+            },
+            "secureauth": {
+              "title": "SecureAuth (USA)",
+              "content": "Colaboración en la iniciativa de Rebranding y Personalización de Temas, transformando completamente el aspecto visual y la experiencia de usuario de la aplicación.",
+              "stack": [
+                "React JS",
+                "CSS",
+                "Figma"
+              ]
+            },
+            "umov": {
+              "title": "Umov - Aplicación Clínica (CHILE)",
+              "content": "Desarrollo de una aplicación web de backoffice robusta diseñada para manejar interacciones complejas de usuarios y administración para clínicas médicas.",
+              "stack": [
+                "React JS",
+                "Figma"
+              ]
+            },
+            "linklabs": {
+              "title": "LinkLabs - Sistema de Ubicación Real-Time (USA)",
+              "content": "Mantenimiento y mejora de un sistema de ubicación en tiempo real. Añadí nuevas funcionalidades según las necesidades del cliente y resolví bugs críticos.",
+              "stack": [
+                "Vue JS",
+                "Vuetify",
+                "Atlassian Suite",
+                "Figma"
+              ]
+            }
+          },
           "impact": [
             {
               "label": "MEJORA RENDIMIENTO",
@@ -174,108 +244,90 @@
       ],
       "own": [
         {
-          "id": "stockautos",
-          "company": "STOCKAUTOS",
+          "id": "own_projects",
+          "company": "PROYECTOS PROPIOS",
           "role": "Arquitecto Fullstack",
-          "period": "2024 — PRESENTE // LA PAMPA",
-          "status": "PROYECTO ACTIVO",
+          "period": "2022 — ACTUALIDAD",
+          "status": "EMPRENDIMIENTOS TECNOLÓGICOS",
           "description": [
-            "Sistema de gestión automotriz con automatización directa en n8n para publicar vehículos en múltiples plataformas.",
-            "Construí un backend robusto usando Supabase, optimizando el alcance de las concesionarias locales."
+            "StockAutos: Gestión automotriz con automatización multiplataforma.",
+            "Alkila: Marketplace inmobiliario integral para el mercado local de Santa Rosa.",
+            "RAM Informática: E-commerce y Dashboard con bot de precios en Python.",
+            "deTaquito: Showcase móvil de alto rendimiento (Fabric Architecture).",
+            "ControlGastos Web: Web App responsiva para control financiero.",
+            "ControlGastos Mobile: App nativa con base de datos PostgreSQL compartida."
           ],
+          "projects": {
+            "stockautos": {
+              "title": "StockAutos",
+              "content": "Sistema de gestión de inventario automotriz de alto rendimiento. Construí un flujo autónomo usando n8n que procesa datos de vehículos y publica automáticamente en Facebook Marketplace, Instagram y portales web. Cuenta con un backend robusto en Supabase.",
+              "stack": [
+                "React",
+                "n8n",
+                "Supabase",
+                "Tailwind CSS"
+              ]
+            },
+            "alkila": {
+              "title": "Marketplace Alkila",
+              "content": "Desarrollo integral de un marketplace inmobiliario enfocado en el mercado local de Santa Rosa. Implementé sistemas de filtrado avanzados y lógica de matching de propiedades, integrados con gestión automatizada de leads.",
+              "stack": [
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Supabase"
+              ]
+            },
+            "ram": {
+              "title": "RAM Informática",
+              "content": "Diseño de un e-commerce y tablero administrativo integrado. Incluye un script de automatización personalizado en Python que procesa mensajes de WhatsApp de proveedores tecnológicos para recalcular márgenes de ganancia en tiempo real.",
+              "stack": [
+                "React",
+                "Python",
+                "Supabase",
+                "WhatsApp API"
+              ]
+            },
+            "detakito": {
+              "title": "deTaquito",
+              "content": "Una aplicación de demostración técnica diseñada para desafiar los límites de React Native. Implementé la nueva Fabric Architecture para asegurar un rendimiento de 60 FPS y una experiencia de usuario verdaderamente nativa.",
+              "stack": [
+                "React Native",
+                "Fabric",
+                "TypeScript",
+                "Reanimated"
+              ]
+            },
+            "controlgastos": {
+              "title": "ControlGastos Web",
+              "content": "Web App FinTech 100% responsiva para la gestión del flujo de caja personal. Incluye tableros interactivos, informes detallados para tarjetas de crédito y categorización automatizada de gastos. Potenciada por una base de datos PostgreSQL en Supabase.",
+              "stack": [
+                "React",
+                "Tailwind CSS",
+                "Recharts",
+                "Supabase",
+                "PostgreSQL"
+              ]
+            },
+            "controlgastos_mobile": {
+              "title": "ControlGastos Mobile",
+              "content": "Aplicación móvil nativa que extiende el ecosistema de ControlGastos. Utiliza una base de datos PostgreSQL compartida mediante Supabase para asegurar la sincronización en tiempo real entre las plataformas web y móvil.",
+              "stack": [
+                "React Native",
+                "Nativewind",
+                "Supabase",
+                "PostgreSQL"
+              ]
+            }
+          },
           "impact": [
             {
               "label": "AUTOMATIZACIÓN",
               "value": "100%"
             },
             {
-              "label": "AGENCIAS",
-              "value": "ESCALANDO"
-            }
-          ]
-        },
-        {
-          "id": "alkila",
-          "company": "ALKILA",
-          "role": "Fundador y Arquitecto Principal",
-          "period": "2023 — PRESENTE // LA PAMPA",
-          "status": "PROYECTO ACTIVO",
-          "description": [
-            "Arquitecturé y desplegué un marketplace inmobiliario a gran escala usando React, Tailwind y Supabase.",
-            "Integré flujos de trabajo en n8n para automatizar leads y la inyección SEO.",
-            "Diseñé un sistema de filtros avanzado que conecta inquilinos con propiedades localmente."
-          ],
-          "impact": [
-            {
-              "label": "PROPIEDADES ACTIVAS",
-              "value": "500+"
-            },
-            {
-              "label": "AHORRO AUTOMAT.",
-              "value": "20h/sem"
-            }
-          ]
-        },
-        {
-          "id": "raminformatica",
-          "company": "RAM INFORMÁTICA",
-          "role": "Desarrollador Fullstack",
-          "period": "2023 // E-COMMERCE",
-          "status": "COMPLETADO",
-          "description": [
-            "Desarrollé un dashboard integrado de administración y e-commerce.",
-            "Creé un script de automatización en Python que procesa mensajes de WhatsApp de proveedores para recalcular márgenes de ganancia en tiempo real."
-          ],
-          "impact": [
-            {
-              "label": "SINCR PRECIOS",
-              "value": "ACTUAL"
-            },
-            {
-              "label": "BACKEND",
-              "value": "SUPABASE"
-            }
-          ]
-        },
-        {
-          "id": "detakito",
-          "company": "DETAQUITO",
-          "role": "Desarrollador Mobile",
-          "period": "2023 // MOBILE",
-          "status": "SHOWCASE",
-          "description": [
-            "App de alto rendimiento construida en React Native.",
-            "Utilicé Fabric Architecture para asegurar una experiencia de usuario fluida y completamente nativa."
-          ],
-          "impact": [
-            {
-              "label": "RENDIMIENTO",
-              "value": "60 FPS"
-            },
-            {
-              "label": "MOTOR",
-              "value": "FABRIC"
-            }
-          ]
-        },
-        {
-          "id": "controlgastos",
-          "company": "CONTROLGASTOS",
-          "role": "Desarrollador Frontend",
-          "period": "2022 // FINTECH",
-          "status": "COMPLETADO",
-          "description": [
-            "Web App 100% responsiva construida en React y Tailwind para finanzas personales.",
-            "Creé reportes gráficos detallados para el flujo de caja y seguimiento de gastos y tarjetas."
-          ],
-          "impact": [
-            {
-              "label": "RESPONSIVO",
-              "value": "SÍ"
-            },
-            {
-              "label": "REPORTES",
-              "value": "DASHBOARDS"
+              "label": "PROYECTOS",
+              "value": "5"
             }
           ]
         }
@@ -283,13 +335,19 @@
       "government": [
         {
           "id": "apa",
-          "company": "A.P.A. - ENTIDAD GOBI.",
+          "company": "A.P.A. - ENTIDAD GOBIERNO",
           "role": "Desarrollador Frontend",
           "period": "03/2019 — 01/2022 // LA PAMPA",
           "status": "ROL PREVIO",
           "description": [
             "Lideré la migración de sistemas legacy desde Visual FoxPro hacia aplicaciones web modernas en React.",
-            "Desarrollé módulos críticos para recursos humanos, vacaciones y control de stock usando React, Bootstrap y Firebase."
+            "Desarrollé módulos críticos para recursos humanos, Gestión de Personal, vacaciones, salarios y control de stock de vehículos y bienes para la administración."
+          ],
+          "stack": [
+            "React",
+            "Bootstrap",
+            "Firebase",
+            "Visual FoxPro"
           ],
           "impact": [
             {
@@ -305,47 +363,95 @@
       ],
       "interests": [
         {
-          "id": "python-ai",
-          "company": "INTELIGENCIA ARTIFICIAL",
-          "role": "Foco Actual: Python & IA",
-          "period": "2024 — PRESENTE // APRENDIZAJE CONTINUO",
-          "status": "ROADMAP DE APRENDIZAJE",
-          "description": [
-            "Explorando conceptos de machine learning y fundamentos de redes neuronales usando Python.",
-            "Construyendo herramientas experimentales impulsadas por IA con énfasis en la integración.",
-            "Profundizando en LLMs, prompt engineering y flujos de trabajo con agentes autónomos."
-          ],
-          "impact": [
-            {
-              "label": "MODELOS DE IA",
-              "value": "3+"
-            },
-            {
-              "label": "PROYECTOS PYTHON",
-              "value": "ACTIVOS"
-            }
-          ]
+          "id": "t1",
+          "company": "APA (Pasantía)",
+          "role": "Pasantía Rentada",
+          "period": "Enero 2005 — Agosto 2008"
         },
         {
-          "id": "tech-future",
-          "company": "TECNOLOGÍAS DEL FUTURO",
-          "role": "Explorador Tecnológico",
-          "period": "EN CURSO // PASIÓN",
-          "status": "CURIOSIDADES",
-          "description": [
-            "Manteniéndome al día con los últimos avances en Web3, edge computing y arquitecturas web de alto rendimiento.",
-            "Estudiando patrones de interacción emergentes en diseño de interfaces (Brutalismo, Glassmorphism)."
-          ],
-          "impact": [
-            {
-              "label": "PROTOTIPOS",
-              "value": "10+"
-            },
-            {
-              "label": "CURIOSIDAD",
-              "value": "100%"
-            }
-          ]
+          "id": "t2",
+          "company": "RAM Informática",
+          "role": "Personal Shop Management",
+          "period": "Agosto 2008 — Octubre 2021"
+        },
+        {
+          "id": "t3",
+          "company": "APA (Segunda Etapa)",
+          "role": "Líder de Migración",
+          "period": "Marzo 2019 — Diciembre 2021"
+        },
+        {
+          "id": "t4",
+          "company": "Temperies (LinkLabs)",
+          "role": "LinkLabs Project",
+          "period": "Marzo 2022 — Abril 2022",
+          "isTemperies": true
+        },
+        {
+          "id": "t5",
+          "company": "Temperies (Umov)",
+          "role": "Umov Project",
+          "period": "Abril 2022 — Mayo 2022",
+          "isTemperies": true
+        },
+        {
+          "id": "t6",
+          "company": "Temperies (SecureAuth)",
+          "role": "SecureAuth Project",
+          "period": "Mayo 2022 — Julio 2022",
+          "isTemperies": true
+        },
+        {
+          "id": "t7",
+          "company": "Temperies (Arculix)",
+          "role": "Arculix Project",
+          "period": "Julio 2022 — Diciembre 2023",
+          "isTemperies": true
+        },
+        {
+          "id": "t8",
+          "company": "Temperies (FasterWay)",
+          "role": "FasterWay Project",
+          "period": "Enero 2024 — Diciembre 2024",
+          "isTemperies": true
+        },
+        {
+          "id": "t9",
+          "company": "Own Project (Alkila)",
+          "role": "Alkila Marketplace",
+          "period": "2025"
+        },
+        {
+          "id": "t10",
+          "company": "Own Project (Control Gastos)",
+          "role": "Control Gastos App",
+          "period": "2025"
+        },
+        {
+          "id": "t11",
+          "company": "Own Project (StockAutos)",
+          "role": "StockAutos System",
+          "period": "2025"
+        },
+        {
+          "id": "t12",
+          "company": "Temperies (FasterWay)",
+          "role": "FasterWay Project",
+          "period": "Enero 2025 — Diciembre 2025",
+          "isTemperies": true
+        },
+        {
+          "id": "t13",
+          "company": "Own Project (deTaquito)",
+          "role": "deTaquito App",
+          "period": "2026"
+        },
+        {
+          "id": "t14",
+          "company": "Temperies (FasterWay)",
+          "role": "FasterWay Project",
+          "period": "Enero 2026 — ACTUALIDAD",
+          "isTemperies": true
         }
       ]
     }

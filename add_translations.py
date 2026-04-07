@@ -25,7 +25,7 @@ en_experience = {
           "id": "temperies",
           "company": "TEMPERIES",
           "role": "Senior Frontend Developer",
-          "period": "03/2022 — PRESENT // USA REMOTE",
+          "period": "03/2022 — PRESENT ",
           "status": "CURRENT ENGAGEMENT",
           "description": [
             "FasterWay (2024 - Present): Collaborating in the development of a premier fitness and nutrition desktop and mobile app, focusing on high-traffic features and tracking systems.",

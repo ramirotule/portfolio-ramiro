@@ -34,7 +34,7 @@ const About = () => {
               <p className="text-[#adaaab] text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t("about.qa_html") }} />
               
               <ul className="space-y-3 pl-4 border-l border-white/10">
-                {(t("about.qa_points", { returnObjects: true }) as string[]).map((point, i) => (
+                {Array.isArray(t("about.qa_points", { returnObjects: true })) && (t("about.qa_points", { returnObjects: true }) as string[]).map((point, i) => (
                   <li key={i} className="text-[#adaaab] text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: point }} />
                 ))}
               </ul>
@@ -86,7 +86,7 @@ const About = () => {
                 <p className="text-[#adaaab] text-sm leading-relaxed mb-3" dangerouslySetInnerHTML={{ __html: t("about.dt_p2_html") }} />
                 
                 <ul className="space-y-2 pl-4 border-l border-white/10 mb-4">
-                  {(t("about.dt_points", { returnObjects: true }) as string[]).map((point, i) => (
+                  {Array.isArray(t("about.dt_points", { returnObjects: true })) && (t("about.dt_points", { returnObjects: true }) as string[]).map((point, i) => (
                     <li key={i} className="text-[#adaaab] text-sm"><span className="text-secondary">-</span> {point}</li>
                   ))}
                 </ul>
@@ -104,7 +104,7 @@ const About = () => {
           
           <div className="bg-white/[0.02] border border-white/10 p-6 relative flex items-center justify-center hover:border-primary/40 transition-colors">
             <p className="font-display text-white/80 text-center text-sm md:text-base italic font-medium tracking-wide">
-              "The only thing impossible is what you don't try!"
+              "{t("about.favorite_quote")}"
             </p>
           </div>
         </motion.div>

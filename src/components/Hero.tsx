@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Terminal } from "lucide-react";
 
 const Hero = () => {
@@ -67,14 +68,13 @@ const Hero = () => {
             ))}
           </div>
 
-          <motion.a
-            href="#projects"
-            whileHover={{ x: 10 }}
-            className="group flex items-center gap-4 text-xs font-display uppercase tracking-[0.3em] text-white/60 hover:text-primary transition-colors"
+          <Link
+            to="/projects"
+            className="group mt-auto flex items-center gap-4 text-xs font-display uppercase tracking-[0.3em] text-white/60 hover:text-primary transition-colors cursor-pointer"
           >
             <div className="w-12 h-[1px] bg-white/20 group-hover:bg-primary transition-colors" />
             Explore Work
-          </motion.a>
+          </Link>
         </motion.div>
 
         {/* Right Column: Code Card */}
@@ -107,10 +107,32 @@ const Hero = () => {
                 </p>
                 <p className="pl-6">
                   <span className="text-primary/80">name</span>:{" "}
-                  <span className="text-tertiary">'Ramiro Toulemonde'</span>,
+                  <span className="text-tertiary">
+                    'Ramiro Santiago Toulemonde',
+                  </span>
                 </p>
                 <p className="pl-6">
-                  <span className="text-primary/80">stack</span>: [
+                  <span className="text-primary/80">main_role</span>:{" "}
+                  <span className="text-tertiary">'Frontend Developer',</span>
+                </p>
+                <p className="pl-6">
+                  <span className="text-primary/80">residence</span>:{" "}
+                  <span className="text-tertiary">
+                    'Santa Rosa - La Pampa - ARGENTINA',
+                  </span>
+                </p>
+                <p className="pl-6">
+                  <span className="text-primary/80">years_experience</span>:{" "}
+                  <span className="text-tertiary">'+6',</span>
+                </p>
+                <p className="pl-6">
+                  <span className="text-primary/80">english_level</span>:{" "}
+                  <span className="text-tertiary">
+                    'B2 Upper Intermediate',
+                  </span>
+                </p>
+                <p className="pl-6">
+                  <span className="text-primary/80">stacks</span>: [
                   <span className="text-tertiary">'React'</span>,{" "}
                   <span className="text-tertiary">'React Native'</span>,{" "}
                   <span className="text-tertiary">'TypeScript'</span>],
@@ -119,17 +141,16 @@ const Hero = () => {
                   <span className="text-primary/80">focus</span>: &#123;
                 </p>
                 <p className="pl-12">
-                  <span className="text-primary/80">performance</span>:{" "}
+                  <span className="text-primary/80">responsibility</span>:{" "}
                   <span className="text-tertiary">'100%'</span>,
                 </p>
                 <p className="pl-12">
-                  <span className="text-primary/80">architecture</span>:{" "}
-                  <span className="text-tertiary">'Fabric & TurboModules'</span>
-                  ,
+                  <span className="text-primary/80">proactivity</span>:{" "}
+                  <span className="text-tertiary">true</span>,
                 </p>
                 <p className="pl-12">
-                  <span className="text-primary/80">automation</span>:{" "}
-                  <span className="text-tertiary">'n8n + Supabase'</span>
+                  <span className="text-primary/80">goodVibes</span>:{" "}
+                  <span className="text-tertiary">'Always'</span>
                 </p>
                 <p className="pl-6">&#125;</p>
                 <p>&#125;;</p>
@@ -152,7 +173,11 @@ const Hero = () => {
                   {/* Cursor Animation */}
                   <motion.span
                     animate={{ opacity: [1, 0] }}
-                    transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
+                    transition={{
+                      duration: 0.8,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
                     className="inline-block w-2.5 h-[1.2rem] bg-white/70"
                   />
                 </p>
