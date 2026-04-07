@@ -21,7 +21,7 @@ import {
   Zap,
   X,
 } from "lucide-react";
-import cvPdf from './assets/cv.pdf';
+import cvPdf from "./assets/cv.pdf";
 
 const GithubIcon = ({ size }: { size: number }) => (
   <svg
@@ -113,7 +113,7 @@ function App() {
                   autoFocus
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  placeholder={t('command.placeholder')}
+                  placeholder={t("command.placeholder")}
                   className="w-full bg-transparent border-none outline-none text-lg font-display uppercase tracking-widest text-white placeholder:text-[#484849]"
                 />
                 <div className="flex items-center gap-1 text-[10px] font-display text-[#484849]">
@@ -127,103 +127,141 @@ function App() {
                 {searchTerm.trim() ? (
                   <div className="px-4 py-2">
                     <span className="text-[10px] font-display uppercase tracking-widest text-primary mb-4 block">
-                      {t('command.results')}
+                      {t("command.results")}
                     </span>
                     {(() => {
-                      const expUs = (t("experience.data.us", { returnObjects: true }) as any[]) || [];
-                      const expOwn = (t("experience.data.own", { returnObjects: true }) as any[]) || [];
-                      const expGov = (t("experience.data.government", { returnObjects: true }) as any[]) || [];
+                      const expUs =
+                        (t("experience.data.us", {
+                          returnObjects: true,
+                        }) as any[]) || [];
+                      const expOwn =
+                        (t("experience.data.own", {
+                          returnObjects: true,
+                        }) as any[]) || [];
+                      const expGov =
+                        (t("experience.data.government", {
+                          returnObjects: true,
+                        }) as any[]) || [];
 
                       const results = [
                         // Dynamic Languages
                         {
                           id: "lang-en",
-                          title: t('experience.english_level'),
-                          desc: t('command.lang_en_desc'),
+                          title: t("experience.english_level"),
+                          desc: t("command.lang_en_desc"),
                           path: "/experience",
-                          type: t('command.type_lang')
+                          type: t("command.type_lang"),
                         },
                         {
                           id: "lang-es",
-                          title: t('experience.spanish_level'),
-                          desc: t('command.lang_es_desc'),
+                          title: t("experience.spanish_level"),
+                          desc: t("command.lang_es_desc"),
                           path: "/about",
-                          type: t('command.type_lang')
+                          type: t("command.type_lang"),
                         },
                         // Projects
-                        ...PROJECTS.map(p => ({
+                        ...PROJECTS.map((p) => ({
                           id: `proj-${p.id}`,
                           title: p.title,
-                          desc: (t(`projects.list.${p.id}.content`) || p.description) + " " + (p.tech ? p.tech.join(" ") : ""),
+                          desc:
+                            (t(`projects.list.${p.id}.content`) ||
+                              p.description) +
+                            " " +
+                            (p.tech ? p.tech.join(" ") : ""),
                           tech: p.tech,
                           path: "/projects",
-                          type: t('command.type_project')
+                          type: t("command.type_project"),
                         })),
                         // Experience USA (and its inner projects)
-                        ...expUs.flatMap(e => {
+                        ...expUs.flatMap((e) => {
                           const mainExp = {
                             id: `exp-us-${e.id}`,
                             title: e.company,
-                            desc: e.role + " " + e.description.join(" ") + " " + (e.stack ? e.stack.join(", ") : ""),
+                            desc:
+                              e.role +
+                              " " +
+                              e.description.join(" ") +
+                              " " +
+                              (e.stack ? e.stack.join(", ") : ""),
                             path: "/experience",
-                            type: t('command.type_exp_us')
+                            type: t("command.type_exp_us"),
                           };
-                          const innerProjs = Object.entries(e.projects || {}).map(([key, p]: [string, any]) => ({
+                          const innerProjs = Object.entries(
+                            e.projects || {},
+                          ).map(([key, p]: [string, any]) => ({
                             id: `exp-us-proj-${key}`,
                             title: `${p.title} (${e.company})`,
-                            desc: p.content + " " + (p.stack ? p.stack.join(", ") : ""),
+                            desc:
+                              p.content +
+                              " " +
+                              (p.stack ? p.stack.join(", ") : ""),
                             path: "/experience",
-                            type: t('command.type_exp_detail')
+                            type: t("command.type_exp_detail"),
                           }));
                           return [mainExp, ...innerProjs];
                         }),
                         // Experience Own Projects (and its inner projects)
-                        ...expOwn.flatMap(e => {
+                        ...expOwn.flatMap((e) => {
                           const mainExp = {
                             id: `exp-own-${e.id}`,
                             title: e.company,
-                            desc: e.role + " " + (e.description ? e.description.join(" ") : ""),
+                            desc:
+                              e.role +
+                              " " +
+                              (e.description ? e.description.join(" ") : ""),
                             path: "/experience",
-                            type: t('command.type_exp_own')
+                            type: t("command.type_exp_own"),
                           };
-                          const innerProjs = Object.entries(e.projects || {}).map(([key, p]: [string, any]) => ({
+                          const innerProjs = Object.entries(
+                            e.projects || {},
+                          ).map(([key, p]: [string, any]) => ({
                             id: `exp-own-proj-${key}`,
                             title: `${p.title} (${e.company})`,
-                            desc: p.content + " " + (p.stack ? p.stack.join(", ") : ""),
+                            desc:
+                              p.content +
+                              " " +
+                              (p.stack ? p.stack.join(", ") : ""),
                             path: "/experience",
-                            type: t('command.type_exp_detail')
+                            type: t("command.type_exp_detail"),
                           }));
                           return [mainExp, ...innerProjs];
                         }),
                         // Experience Government
-                        ...expGov.map(e => ({
+                        ...expGov.map((e) => ({
                           id: `exp-gov-${e.id}`,
                           title: e.company,
-                          desc: e.role + " " + e.description.join(" ") + " " + (e.stack ? e.stack.join(", ") : ""),
+                          desc:
+                            e.role +
+                            " " +
+                            e.description.join(" ") +
+                            " " +
+                            (e.stack ? e.stack.join(", ") : ""),
                           path: "/experience",
-                          type: t('command.type_exp_gov')
+                          type: t("command.type_exp_gov"),
                         })),
                         {
                           id: "about-profile",
-                          title: t('about.profile_title'),
+                          title: t("about.profile_title"),
                           desc: t("about.profile_html"),
                           path: "/about",
-                          type: t('nav.about')
+                          type: t("nav.about"),
                         },
                         {
                           id: "action-cv",
-                          title: t('nav.download_cv'),
+                          title: t("nav.download_cv"),
                           desc: "Ramiro Toulemonde CV - Resume - Curriculum - PDF Download",
                           path: "download",
-                          type: t('command.actions'),
-                          isDownload: true
-                        }
-                      ].filter(item => {
+                          type: t("command.actions"),
+                          isDownload: true,
+                        },
+                      ].filter((item) => {
                         const query = searchTerm.toLowerCase().trim();
                         return (
                           item.title.toLowerCase().includes(query) ||
                           item.desc.toLowerCase().includes(query) ||
-                          (item as any).tech?.some((t: string) => t.toLowerCase().includes(query))
+                          (item as any).tech?.some((t: string) =>
+                            t.toLowerCase().includes(query),
+                          )
                         );
                       });
 
@@ -231,7 +269,7 @@ function App() {
                         return (
                           <div className="py-8 text-center">
                             <p className="text-[#484849] font-display uppercase tracking-widest text-xs">
-                              {t('command.no_results', { query: searchTerm })}
+                              {t("command.no_results", { query: searchTerm })}
                             </p>
                           </div>
                         );
@@ -242,7 +280,7 @@ function App() {
                           key={result.id}
                           onClick={() => {
                             if ((result as any).isDownload) {
-                              const link = document.createElement('a');
+                              const link = document.createElement("a");
                               link.href = cvPdf;
                               link.download = "Ramiro_Toulemonde_CV.pdf";
                               link.click();
@@ -276,15 +314,15 @@ function App() {
                   <>
                     <div className="mb-6 px-4 py-2">
                       <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
-                        {t('command.navigation')}
+                        {t("command.navigation")}
                       </span>
                       {[
-                        { label: t('nav.home'), path: "/" },
-                        { label: t('nav.about'), path: "/about" },
-                        { label: t('nav.projects'), path: "/projects" },
-                        { label: t('nav.experience'), path: "/experience" },
-                        { label: t('nav.interests'), path: "/interests" },
-                        { label: t('nav.contact'), path: "/contact" },
+                        { label: t("nav.home"), path: "/" },
+                        { label: t("nav.about"), path: "/about" },
+                        { label: t("nav.projects"), path: "/projects" },
+                        { label: t("nav.experience"), path: "/experience" },
+                        { label: t("nav.interests"), path: "/interests" },
+                        { label: t("nav.contact"), path: "/contact" },
                       ].map((item) => (
                         <div
                           key={item.label}
@@ -310,15 +348,15 @@ function App() {
 
                     <div className="px-4 py-2">
                       <span className="text-[10px] font-display uppercase tracking-widest text-[#484849] mb-4 block">
-                        {t('command.actions')}
+                        {t("command.actions")}
                       </span>
-                      <a 
+                      <a
                         href={cvPdf}
                         download="Ramiro_Toulemonde_CV.pdf"
                         className="flex items-center justify-between p-3 hover:bg-secondary/10 group transition-colors cursor-pointer"
                       >
                         <span className="font-display uppercase tracking-widest text-white group-hover:text-secondary transition-colors">
-                          {t('nav.download_cv')}
+                          {t("nav.download_cv")}
                         </span>
                         <span className="text-[9px] font-display uppercase tracking-widest text-[#484849]">
                           CV.pdf
@@ -370,11 +408,13 @@ function App() {
                       </div>
                       <div>
                         <h2 className="text-4xl md:text-6xl font-display font-black uppercase text-white tracking-tighter">
-                          {t('interests_section.title_prefix')}{" "}
-                          <span className="text-tertiary italic">{t('interests_section.title_highlight')}</span>
+                          {t("interests_section.title_prefix")}{" "}
+                          <span className="text-tertiary italic">
+                            {t("interests_section.title_highlight")}
+                          </span>
                         </h2>
                         <p className="text-[#adaaab] text-sm uppercase tracking-widest mt-2">
-                          {t('interests_section.subtitle')}
+                          {t("interests_section.subtitle")}
                         </p>
                       </div>
                     </div>
@@ -383,30 +423,30 @@ function App() {
                       <div className="glass p-6 border-white/5">
                         <Cpu size={24} className="text-tertiary mb-6" />
                         <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                          {t('interests_section.python_title')}
+                          {t("interests_section.python_title")}
                         </h4>
                         <p className="text-[#adaaab] text-xs leading-relaxed">
-                          {t('interests_section.python_desc')}
+                          {t("interests_section.python_desc")}
                         </p>
                       </div>
 
                       <div className="glass p-6 border-white/5">
                         <Zap size={24} className="text-primary mb-6" />
                         <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                          {t('interests_section.nextjs_title')}
+                          {t("interests_section.nextjs_title")}
                         </h4>
                         <p className="text-[#adaaab] text-xs leading-relaxed">
-                          {t('interests_section.nextjs_desc')}
+                          {t("interests_section.nextjs_desc")}
                         </p>
                       </div>
 
                       <div className="glass p-6 border-white/5">
                         <Activity size={24} className="text-secondary mb-6" />
                         <h4 className="text-white font-display uppercase tracking-widest text-sm mb-4">
-                          {t('interests_section.ai_title')}
+                          {t("interests_section.ai_title")}
                         </h4>
                         <p className="text-[#adaaab] text-xs leading-relaxed">
-                          {t('interests_section.ai_desc')}
+                          {t("interests_section.ai_desc")}
                         </p>
                       </div>
                     </div>
@@ -469,13 +509,33 @@ function App() {
       </footer>
 
       {/* Keyboard Hint */}
-      <div className="fixed bottom-6 right-6 hidden md:flex items-center gap-3 py-2 px-4 glass text-[10px] font-display uppercase tracking-widest text-[#adaaab] shadow-[0_0_20px_rgba(161,250,255,0.1)] border-primary/20">
-        Press{" "}
-        <kbd className="border border-primary/50 text-primary bg-primary/10 px-2 py-0.5 rounded mx-1 block font-black">
-          ⌘ K
+      <motion.div
+        animate={{
+          scale: [1, 1.02, 1],
+          borderColor: [
+            "rgba(255,0,255,0.2)",
+            "rgba(255,0,255,0.5)",
+            "rgba(255,0,255,0.2)",
+          ],
+          boxShadow: [
+            "0 0 20px rgba(255,0,255,0.1)",
+            "0 0 30px rgba(255,0,255,0.3)",
+            "0 0 20px rgba(255,0,255,0.1)",
+          ],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="fixed bottom-4 right-4 hidden md:flex items-center gap-2 py-1.5 px-3 glass text-[9px] font-display uppercase tracking-widest text-white/50 shadow-[0_0_15px_rgba(255,0,255,0.05)] border-magenta/10 z-[50]"
+      >
+        <span className="opacity-40">Press</span>
+        <kbd className="border border-[#ff00ff]/30 text-[#ff00ff] bg-[#ff00ff]/5 px-2 py-0.5 rounded mx-1 block font-black text-[10px]">
+          CTRL + K
         </kbd>{" "}
-        for Command Palette
-      </div>
+        <span className="opacity-40">for Command Palette</span>
+      </motion.div>
 
       {/* Map Modal */}
       <AnimatePresence>
